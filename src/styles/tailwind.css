@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Bellefair&family=Blinker:wght@600&family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Kumbh+Sans:wght@400;700&family=Lato:ital,wght@0,400;0,900;1,300&family=League+Spartan:wght@500;600;700&family=Manrope:wght@400;500&family=Nunito+Sans:opsz,wght@6..12,300;6..12,600;6..12,800&family=Open+Sans:wght@400;700&family=Outfit:wght@400;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700;1,800&family=Roboto:ital,wght@0,500;1,400&family=Rubik:wght@300;400;500;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,html{
+    @apply w-full h-full font-Bellefair
+}
+
+.home{
+    @apply grid grid-cols-1 h-screen grid-rows-[1fr,5fr] bg-desktopHomeBg bg-no-repeat bg-[100%] bg-cover w-screen;
+}
+
+
+header{
+    @apply flex ml-8 space-x-16 row-span-1
+}
+
+.logo{
+    @apply flex items-center
+}
+
+nav{
+    @apply h-full bg-stroke/30 backdrop-blur-md flex items-center pr-[12.91rem] pl-28;
+}
+
+.number-nav{
+    @apply font-bold mr-2
+}
+
+
+nav ul{
+    @apply flex items-center space-x-6  text-white h-full
+}
+
+nav ul li{
+    @apply hover:border-solid hover:border-b-4 hover:cursor-pointer h-full content-center text-center flex items-center
+}
+
+
+.section-two{
+    @apply row-span-1
+}
+
+hr{
+    @apply text-stroke/30 w-[40vw] -mr-4 z-10 backdrop-blur-md;
+}
+
+.main-nav-container{
+    @apply flex items-center
+}
+
+
+
