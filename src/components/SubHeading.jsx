@@ -1,7 +1,7 @@
 import "/src/styles/destination.css";
 
-function SubHeading({ heading }) {
-  return  <h2>{heading}</h2>
+function SubHeading({ heading,style }) {
+  return  <h2 className={style}>{heading}</h2>
   
 }
 

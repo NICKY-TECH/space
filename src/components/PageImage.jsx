@@ -1,6 +1,6 @@
 import '/src/styles/destination.css';
 function PageImage({link}){
-    return <div>
+    return <div className='page-image'>
         <img src={link}/>
     </div>
 }

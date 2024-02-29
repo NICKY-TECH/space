@@ -2,10 +2,10 @@ import "/src/styles/destination.css"
 
 function PlanetFooterDetails ({top,bottom}){
     return <div className="planet-footer-details">
-    <p>
+    <p className="top"> 
 {top}
     </p>
-    <p>
+    <p className="bottom">
 {bottom}
     </p>
 

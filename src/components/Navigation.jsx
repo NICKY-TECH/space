@@ -1,9 +1,9 @@
 import "/src/styles/destination.css";
 import {NavItem} from "/src/index";
 
-function Navigation({ list }) {
+function Navigation({ list,style }) {
   return (
-     <nav>
+     <nav className={style}>
       <ul>
         {
           list.map((item,index) => {

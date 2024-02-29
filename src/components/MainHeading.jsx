@@ -1,7 +1,7 @@
 import "/src/styles/destination.css";
 
-function MainHeading({ heading }) {
-  return <h1>{heading}</h1>;
+function MainHeading({ heading,style }) {
+  return <h1 className={style}>{heading}</h1>;
 }
 
 export default MainHeading;

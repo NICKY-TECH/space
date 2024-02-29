@@ -1,9 +1,10 @@
 import "/src/styles/destination.css"
-import {Home} from "/src/index"
+import {Home,PlanetParent} from "/src/index"
+
 
 function Main (){
     return <main>
-<Home/>
+<PlanetParent/>
     </main>
 }
 

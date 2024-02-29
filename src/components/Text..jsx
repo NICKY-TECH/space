@@ -1,7 +1,7 @@
 import "/src/styles/destination.css";
 
-function Text ({text}){
-    return<div className="text-container">
+function Text ({text,style}){
+    return<div className={style}>
          <p>
             {text}
          </p>

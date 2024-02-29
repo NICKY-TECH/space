@@ -23,10 +23,19 @@ const mainNav = [
 ];
 
 const subNav = [
-    "MOON",
-    "MARS",
-    "EUROPA",
-    "TITAN"
+   {
+    text:"MOON",
+    number:""
+   },
+  {  text:"MARS",
+  number:""
+},
+{    text:"EUROPA",
+number:""
+},
+  {  text:"TITAN",
+    number:""
+}
 ];
 
 const planetDetails =[

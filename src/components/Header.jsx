@@ -9,7 +9,7 @@ function Header ({items}){
     </div>
      <div className="main-nav-container">
      <hr/>
-     <Navigation list={items}/>
+     <Navigation list={items} style="main-nav"/>
      </div>
       </header>
 }
