@@ -6,10 +6,9 @@ function Navigation({ list }) {
      <nav>
       <ul>
         {
-          list.map((item) => {
-          return<>
-          <NavItem item={item.text} number={item.number}/>
-          </>
+          list.map((item,index) => {
+          return <NavItem item={item.text} number={item.number} key={index}/>
+          
         })}
       </ul>
     </nav>
