@@ -1,28 +1,40 @@
-@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Bellefair&family=Blinker:wght@600&family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Kumbh+Sans:wght@400;700&family=Lato:ital,wght@0,400;0,900;1,300&family=League+Spartan:wght@500;600;700&family=Manrope:wght@400;500&family=Nunito+Sans:opsz,wght@6..12,300;6..12,600;6..12,800&family=Open+Sans:wght@400;700&family=Outfit:wght@400;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700;1,800&family=Roboto:ital,wght@0,500;1,400&family=Rubik:wght@300;400;500;700&family=Ubuntu:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,200;0,400;1,400&family=Be+Vietnam+Pro:wght@400;500;700&family=Bellefair&family=Blinker:wght@600&family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Kumbh+Sans:wght@400;700&family=Lato:ital,wght@0,400;0,900;1,300&family=League+Spartan:wght@500;600;700&family=Manrope:wght@400;500&family=Nunito+Sans:opsz,wght@6..12,300;6..12,600;6..12,800&family=Open+Sans:wght@400;700&family=Outfit:wght@400;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700;1,800&family=Roboto:ital,wght@0,500;1,400&family=Rubik:wght@300;400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
 body,html{
     @apply w-full h-full font-Bellefair
 }
 
+main{
+    @apply h-screen bg-black w-screen;
+}
+
 .home{
-    @apply grid grid-cols-1 h-screen grid-rows-[1fr,5fr] bg-desktopHomeBg bg-no-repeat bg-[100%] bg-cover w-screen;
+    @apply grid grid-cols-12 h-full grid-rows-12 bg-desktopHomeBg bg-no-repeat bg-[100%] bg-cover w-full;
 }
 
 
 header{
-    @apply flex ml-8 space-x-16 row-span-1
+    @apply pl-4 flex row-span-2 w-full col-span-12 my-4 space-x-4;
 }
 
 .logo{
-    @apply flex items-center
+    @apply flex items-center pl-4;
+    flex-grow: 1;
 }
 
 nav{
-    @apply h-full bg-stroke/30 backdrop-blur-md flex items-center pr-[12.91rem] pl-28;
+    @apply h-full bg-stroke/30 backdrop-blur-md flex items-center pl-12;
+    flex-grow: 3;
 }
 
 .number-nav{
@@ -40,16 +52,46 @@ nav ul li{
 
 
 .section-two{
-    @apply row-span-1;
+    @apply row-span-10 col-span-12 text-white flex justify-between px-6;
 }
 
 hr{
-    @apply text-stroke/30 w-[40vw] -mr-4 z-10 backdrop-blur-md;
+    @apply text-stroke/30 -mr-4 z-10 backdrop-blur-md;
+    flex-grow: 5;
 }
 
 .main-nav-container{
+    @apply flex items-center w-[90%];
+    flex-grow: 2;
+}
+
+h2{
+    @apply text-dilute text-[28px] font-BarlowCondensed font-extralight tracking-wider space-x-3;
+    word-spacing: 5px;
+}
+
+h1{
+    @apply text-[150px]
+}
+
+.text-container{
+    @apply w-[29%]
+}
+
+.home-section-one{
     @apply flex items-center
 }
 
+.home-section-two{
+    @apply flex items-center
+}
+
+.explore{
+    @apply bg-white w-[300px] h-[300px] rounded-full flex justify-center  text-[32px] items-center text-black hover:cursor-pointer
+}
+
+.inner-container-home-section-two p{
+    @apply font-BarlowCondensed text-[18px] text-dilute
+}
 
 

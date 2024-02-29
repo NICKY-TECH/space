@@ -50,7 +50,8 @@ export default {
         bgColor: "#0B0D17",
       },
       fontFamily:{
-        "Bellefair":["Bellefair"]
+        "Bellefair":["Bellefair"],
+        "BarlowCondensed":["Barlow Condensed"]
       }
     },
   },
