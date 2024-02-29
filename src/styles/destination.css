@@ -912,6 +912,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
 }
+.bg-slate-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+}
 .bg-stroke{
   --tw-bg-opacity: 1;
   background-color: rgb(151 151 151 / var(--tw-bg-opacity));
@@ -1412,6 +1416,8 @@ header hr{
   --tw-text-opacity: 1;
   color: rgb(208 214 249 / var(--tw-text-opacity));
 }
+
+
 
 /* .moon{
 flex-grow: 2;

@@ -1,5 +1,5 @@
 import "/src/styles/destination.css";
-import { Header,PlanetSubComponent,Moon } from '/src/index';
+import { Header,PlanetSubComponent,Moon,Mars,Europa } from '/src/index';
 import { mainNav } from "../resources/data/data";
 
 function PlanetParent(){
@@ -15,7 +15,7 @@ return <section className="planet">
     </p>
 </div>
 <article className="main-planet-content">
-<Moon/>
+<Europa/>
 <PlanetSubComponent/>
 
 </article>

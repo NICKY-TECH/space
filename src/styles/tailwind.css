@@ -127,7 +127,7 @@ header hr {
 }
 
 .sub-planet-component{
-@apply  ml-32;
+@apply ml-32;
 }
 
 .planet-nav {
@@ -137,6 +137,8 @@ header hr {
 .planet-nav ul li{
     @apply text-dilute
 }
+
+
 
 /* .moon{
 flex-grow: 2;
