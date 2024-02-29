@@ -1,10 +1,10 @@
 import "/src/styles/destination.css"
-import {Home,PlanetParent} from "/src/index"
+import { Outlet } from "react-router-dom"
 
 
 function Main (){
     return <main>
-<PlanetParent/>
+<Outlet/>
     </main>
 }
 

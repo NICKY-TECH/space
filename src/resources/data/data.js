@@ -7,34 +7,42 @@ const mainNav = [
   {
     number: "00",
     text: "HOME",
+    link:"/"
   },
   {
     number: "01",
     text: "DESTINATION",
+    link:"/destination"
   },
   {
     number: "02",
     text: "CREW",
+    link:"/crew"
   },
   {
     number: "03",
     text: "TECHNOLOGY",
+    link:"/technology"
   },
 ];
 
 const subNav = [
    {
     text:"MOON",
-    number:""
+    number:"",
+    mars:"/moon"
    },
   {  text:"MARS",
-  number:""
+  number:"",
+  link:"/mars"
 },
 {    text:"EUROPA",
-number:""
+number:"",
+link:"/europa"
 },
   {  text:"TITAN",
-    number:""
+    number:"",
+    limk:"/titan"
 }
 ];
 

@@ -7,7 +7,7 @@ function Navigation({ list,style }) {
       <ul>
         {
           list.map((item,index) => {
-          return <NavItem item={item.text} number={item.number} key={index}/>
+          return <NavItem item={item.text} number={item.number} key={index} link={item.link}/>
           
         })}
       </ul>

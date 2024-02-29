@@ -17,4 +17,5 @@ import Mars from "./components/Mars";
 import Europa from "./components/Europa";
 import EuropaDetails from "./components/EuropaDetails";
 
+
 export { MainHeading, SubHeading, Text, NavItem, Navigation,Home,Main,Header,PageImage,PlanetFooterDetails,PlanetParent,PlanetSubComponent,Moon,MoonDetails,Mars,MarsDetails,Europa,EuropaDetails};

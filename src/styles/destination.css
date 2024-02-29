@@ -751,6 +751,9 @@ video {
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+.cursor-pointer{
+  cursor: pointer;
+}
 .resize{
   resize: both;
 }
@@ -849,6 +852,9 @@ video {
 }
 .border{
   border-width: 1px;
+}
+.border-b-4{
+  border-bottom-width: 4px;
 }
 .border-t-\[1px\]{
   border-top-width: 1px;
@@ -1216,7 +1222,13 @@ nav ul li{
   text-align: center;
 }
 
-nav ul li:hover{
+a:hover{
+  cursor: pointer;
+  border-bottom-width: 2px;
+  border-style: solid;
+}
+
+a.active{
   cursor: pointer;
   border-bottom-width: 4px;
   border-style: solid;
@@ -1466,8 +1478,8 @@ footer{
   cursor: pointer;
 }
 
-.hover\:border-b-4:hover{
-  border-bottom-width: 4px;
+.hover\:border-b-2:hover{
+  border-bottom-width: 2px;
 }
 
 .hover\:border-solid:hover{

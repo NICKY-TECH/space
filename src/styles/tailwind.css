@@ -45,7 +45,15 @@ nav ul {
 }
 
 nav ul li {
-  @apply hover:border-solid hover:border-b-4 hover:cursor-pointer h-full content-center text-center flex items-center;
+  @apply h-full content-center text-center flex items-center;
+}
+
+a{
+ @apply hover:border-solid hover:border-b-2 hover:cursor-pointer ; 
+}
+
+a.active{
+@apply border-solid border-b-4 cursor-pointer 
 }
 
 .section-two {
