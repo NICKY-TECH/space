@@ -16,7 +16,7 @@ html {
 }
 
 main {
-  @apply h-screen bg-black w-screen  max-[768px]:max-w-max max-[768px]:h-full max-[655px]:max-w-fit       max-[313px]:max-w-max max-[313px]:h-max
+  @apply h-screen bg-black w-screen  max-[768px]:max-w-max max-[768px]:h-full max-[655px]:max-w-fit       
 }
 
 .home {
@@ -93,7 +93,7 @@ header hr {
   @apply min-[976px]:w-[29%] max-[768px]:text-center max-[768px]:flex max-[768px]:justify-center max-[975px]:w-full;
 }
 .text-container-planet{
-  @apply w-[45%] text-white mb-8;
+  @apply w-[45%] text-white mb-8 max-[768px]:w-[90%];
 }
 
 .home-section-one {
@@ -125,27 +125,27 @@ header hr {
 }
 
 .planet-details-adjustment{
-    @apply grid grid-cols-12 grid-rows-12 row-span-10 col-span-12 pl-14 space-y-16;
+    @apply grid grid-cols-12 grid-rows-12 row-span-10 col-span-12 pl-14 space-y-16 max-[768px]:pr-14;
 }
 
 .planet-two {
-  @apply row-span-1  col-span-12 flex space-x-4 items-center text-[28px] font-BarlowCondensed;
+  @apply row-span-1  col-span-12 flex space-x-4 items-center text-[28px] font-BarlowCondensed max-[768px]:w-full max-[401px]:text-[1rem];
 }
 
 .planet-two span{
     @apply text-stroke font-bold;
 }
 .planet-two p{
-    @apply text-white text-[28px] font-extralight tracking-wider space-x-3;
+    @apply text-white font-extralight tracking-wider space-x-3;
     word-spacing: 5px;
 }
 
 .main-planet-content {
-  @apply row-span-11 col-span-12  flex justify-between;
+  @apply row-span-11 col-span-12  flex  max-[768px]:flex-col max-[768px]:items-center min-[769px]:flex-row;
 }
 
 .sub-planet-component{
-@apply ml-32;
+@apply min-[769px]:ml-32 max-[768px]:flex max-[768px]:items-center max-[768px]:flex-col;
 }
 
 .planet-nav {
@@ -163,14 +163,18 @@ flex-grow: 2;
 background-color: beige;
 } */
 
+.moon-details{
+  @apply  max-[768px]:flex max-[768px]:items-center max-[768px]:flex-col
+}
+
 
 
 .page-image{
-    @apply pl-8
+    @apply pl-8 max-[768px]:w-[220px] max-[768px]:h-[220px];
 }
 
 footer {
-  @apply flex space-x-10 border-solid border-t-[1px] border-stroke w-[40%] pt-3
+  @apply flex min-[769px]:space-x-10 border-solid border-t-[1px] border-stroke min-[769px]:w-[40%] pt-3 max-[768px]:w-full max-[768px]:justify-between
 }
 
 .top{

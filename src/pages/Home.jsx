@@ -5,7 +5,7 @@ import { mainNav } from "../resources/data/data";
 
 function Home() {
  return  <section className="home">
-<Header items={mainNav}/>
+<Header items={mainNav} />
 <section className="section-two">
 <article className="home-section-one">
    <div className="inner-container-home-section-two">
