@@ -1,5 +1,5 @@
 import "/src/styles/destination.css";
-import { Header,Planet } from '/src/index';
+import { Header,Planet,PageLabel } from '/src/index';
 import { mainNav } from "../resources/data/data";
 import { Outlet, useLocation} from "react-router-dom";
 import moon from "/src/resources/images/destination/image-moon.png"
@@ -9,18 +9,10 @@ import titan from "/src/resources/images/destination/image-titan.png"
 
 function PlanetParent(){
     const location = useLocation()
-    console.log(location)
 return <section className="planet">
 <Header items={mainNav}/>
 <div className="planet-details-adjustment">
-<div className="planet-two">
-    <span>
-01
-    </span>
-    <p>
-    Pick your destination
-    </p>
-</div>
+<PageLabel text="PICK YOUR DESTINATION" number="01"/>
 <article className="main-planet-content">
 
 {

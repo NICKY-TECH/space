@@ -15,6 +15,9 @@ import MoonDetails from "./components/MoonDetails";
 import MarsDetails from "./components/MarsDetails";
 import EuropaDetails from "./components/EuropaDetails";
 import TitanDetails from "./components/TitanDetails";
+import Crew from "./pages/Crew";
+import PageLabel from "./components/PageLabel";
+import CrewSectionOne from "./components/CrewSectionOne";
 
 
-export { MainHeading, SubHeading, Text, NavItem, Navigation,Home,Main,Header,PageImage,PlanetFooterDetails,PlanetParent,PlanetSubComponent,Planet,MoonDetails,MarsDetails,EuropaDetails,TitanDetails};
+export { MainHeading, SubHeading, Text, NavItem, Navigation,Home,Main,Header,PageImage,PlanetFooterDetails,PlanetParent,PlanetSubComponent,Planet,MoonDetails,MarsDetails,EuropaDetails,TitanDetails,Crew,PageLabel,CrewSectionOne};
