@@ -23,7 +23,7 @@ return <section className="planet">
 </div>
 <article className="main-planet-content">
 {
-    location.pathname ==="/destination"? <Planet src={moon}/>: location.pathname ==='/destination/mars'?<Planet src={mars}/>:location.pathname ==="/destination/europa"?<Planet src={europa}/>: location.pathname ==="/destination/titan"?<Planet src={titan}/>:""
+    location.pathname ==="/destination"? <Planet src={moon}/>:  location.pathname ==="/destination/moon"? <Planet src={moon}/>: location.pathname ==='/destination/mars'?<Planet src={mars}/>:location.pathname ==="/destination/europa"?<Planet src={europa}/>: location.pathname ==="/destination/titan"?<Planet src={titan}/>:""
 }
 <Outlet/>
 
