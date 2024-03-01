@@ -1,5 +1,5 @@
 import "/src/styles/destination.css"
-import {Main,Home,PlanetParent} from "/src/index";
+import {Main,Home,PlanetParent,PlanetSubComponent,EuropaDetails,MoonDetails,MarsDetails,TitanDetails} from "/src/index";
 import {
   RouterProvider,
   createBrowserRouter,
@@ -14,7 +14,15 @@ function App() {
     createRoutesFromElements(
       <Route path="/" element={<Main />}>
         <Route path="/" element={<Home/>} />
-        <Route path="destination" element={<PlanetParent/>} />
+        <Route path="destination" element={<PlanetParent/>} >
+        <Route path="" element={<PlanetSubComponent/>} >
+        <Route path="europa" element={<EuropaDetails/>} />
+        <Route path=""  element={<MoonDetails/>} />
+        <Route path="mars" element={<MarsDetails/>} />
+        <Route path="titan" element={<TitanDetails/>} />
+
+        </Route>
+        </Route>
       </Route>
     )
   );

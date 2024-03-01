@@ -30,19 +30,19 @@ const subNav = [
    {
     text:"MOON",
     number:"",
-    mars:"/moon"
+    link:"/destination"
    },
   {  text:"MARS",
   number:"",
-  link:"/mars"
+  link:"/destination/mars"
 },
 {    text:"EUROPA",
 number:"",
-link:"/europa"
+link:"/destination/europa"
 },
   {  text:"TITAN",
     number:"",
-    limk:"/titan"
+    link:"/destination/titan"
 }
 ];
 
