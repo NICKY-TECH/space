@@ -93,7 +93,7 @@ header hr {
   @apply min-[976px]:w-[29%] max-[768px]:text-center max-[768px]:flex max-[768px]:justify-center max-[975px]:w-full;
 }
 .text-container-planet {
-  @apply w-[45%] text-white mb-8 max-[768px]:w-[90%];
+  @apply w-[45%] text-dilute mb-8 max-[768px]:w-[90%] font-BarlowCondensed;
 }
 
 .home-section-one {

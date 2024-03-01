@@ -1576,8 +1576,9 @@ header hr {
 .text-container-planet{
   margin-bottom: 2rem;
   width: 45%;
+  font-family: Barlow Condensed;
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(208 214 249 / var(--tw-text-opacity));
 }
 @media (max-width: 768px){
 
