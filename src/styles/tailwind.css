@@ -125,7 +125,7 @@ header hr {
 }
 
 .crew {
-  @apply  grid grid-cols-12 h-full grid-rows-12 bg-desktopCrewBg bg-no-repeat bg-[100%] bg-cover w-full max-[768px]:bg-tabletCrewBg max-[665px]:bg-mobileCrewBg ;
+  @apply  grid grid-cols-12 h-full grid-rows-12 bg-desktopCrewBg bg-no-repeat bg-[100%] bg-cover w-full max-[768px]:bg-tabletCrewBg max-[665px]:bg-mobileCrewBg;
 }
 
 .planet-details-adjustment {
@@ -138,11 +138,11 @@ header hr {
 
 
 .crew-section-one{
-  @apply text-white flex flex-col  row-span-12 col-span-6;
+  @apply text-white flex flex-col  row-span-12 col-span-6 mt-28;
 }
 
 .crew-main-section-one{
-  @apply row-span-12 col-span-6 
+  @apply row-span-12 col-span-6 flex flex-col;
 }
 
 .crew-image{
@@ -204,4 +204,20 @@ footer {
 
 .bottom {
   @apply text-white text-[24px];
+}
+
+.crew-title{
+  @apply text-stroke text-[32px];
+}
+
+.crew-section-one h2{
+  @apply text-[50px] mb-5
+}
+
+.slide-navigation{
+  @apply flex space-x-4 my-auto;
+}
+
+.slide-button{
+  @apply w-[20px] h-[20px] rounded-full bg-stroke hover:cursor-pointer;
 }

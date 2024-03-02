@@ -18,6 +18,7 @@ import TitanDetails from "./components/TitanDetails";
 import Crew from "./pages/Crew";
 import PageLabel from "./components/PageLabel";
 import CrewSectionOne from "./components/CrewSectionOne";
+import SlideButton from "./components/SlideButton";
 
 
-export { MainHeading, SubHeading, Text, NavItem, Navigation,Home,Main,Header,PageImage,PlanetFooterDetails,PlanetParent,PlanetSubComponent,Planet,MoonDetails,MarsDetails,EuropaDetails,TitanDetails,Crew,PageLabel,CrewSectionOne};
+export { MainHeading, SubHeading, Text, NavItem, Navigation,Home,Main,Header,PageImage,PlanetFooterDetails,PlanetParent,PlanetSubComponent,Planet,MoonDetails,MarsDetails,EuropaDetails,TitanDetails,Crew,PageLabel,SlideButton,CrewSectionOne};

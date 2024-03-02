@@ -1,5 +1,5 @@
 import "/src/styles/destination.css";
-import {Header,PageLabel,CrewSectionOne,PageImage} from "/src/index";
+import {Header,PageLabel,CrewSectionOne,PageImage,SlideButton} from "/src/index";
 import { mainNav } from "../resources/data/data";
 import douglas from "/src/resources/images/crew/image-douglas-hurley.png";
 
@@ -17,6 +17,12 @@ function Crew() {
   and former NASA astronaut. He launched into space for the third time as 
   commander of Crew Dragon Demo-2."
           />
+          </div>
+          <div className="slide-navigation">
+<SlideButton/>
+<SlideButton/>
+<SlideButton/>
+<SlideButton/>
           </div>
     </div>
     
