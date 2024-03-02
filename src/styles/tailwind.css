@@ -218,6 +218,10 @@ footer {
   @apply flex space-x-4 my-auto;
 }
 
-.slide-button{
+.slide-button-inactive{
   @apply w-[20px] h-[20px] rounded-full bg-stroke hover:cursor-pointer;
+}
+
+.slide-button-active{
+  @apply w-[20px] h-[20px] rounded-full bg-white hover:cursor-pointer;
 }
