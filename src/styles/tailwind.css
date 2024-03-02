@@ -138,23 +138,23 @@ header hr {
 
 
 .crew-section-one{
-  @apply text-white flex flex-col  row-span-12 col-span-6 mt-28;
+  @apply text-white flex flex-col  row-span-12 col-span-6 mt-28 max-[768px]:justify-center max-[768px]:items-center;
 }
 
 .crew-main-section-one{
-  @apply row-span-12 col-span-6 flex flex-col;
+  @apply row-span-11 col-span-12 flex  max-[768px]:flex-col  max-[768px]:items-center ;
 }
 
 .crew-image{
-  @apply  row-span-12 col-span-6 flex items-end justify-center; 
+  @apply  flex items-end justify-center; 
 }
 
 .crew-image .page-image img{
-  @apply h-[500px]
+  @apply h-[600px] max-[768px]:h-[500px] pr-14 w-full max-[655px]:h-[300px]
 }
 
 .planet-two {
-  @apply row-span-1  col-span-12 flex space-x-4 items-center text-[28px] font-BarlowCondensed max-[768px]:w-full max-[401px]:text-[1rem];
+  @apply row-span-1  col-span-12 flex space-x-4 items-center text-[28px] font-BarlowCondensed max-[768px]:w-full max-[401px]:text-[1rem] max-[655px]:justify-center;
 }
 
 .planet-two span {
@@ -167,6 +167,14 @@ header hr {
 
 .main-planet-content {
   @apply row-span-11 col-span-12  flex  max-[768px]:flex-col max-[768px]:items-center min-[769px]:flex-row;
+}
+
+.main-crew-content{
+  @apply flex flex-col max-[768px]:mb-3 max-[655px]:order-last;
+}
+
+.crew-section-one .text-container-planet{
+  @apply max-[768px]:text-justify
 }
 
 .sub-planet-component {
@@ -207,21 +215,21 @@ footer {
 }
 
 .crew-title{
-  @apply text-stroke text-[32px];
+  @apply text-stroke text-[32px] max-[768px]:text-[20px];
 }
 
 .crew-section-one h2{
-  @apply text-[50px] mb-5
+  @apply text-[50px] mb-5 max-[768px]:text-[30px]
 }
 
 .slide-navigation{
-  @apply flex space-x-4 my-auto;
+  @apply flex space-x-4 my-auto max-[768px]:justify-center max-[768px]:mb-3;
 }
 
 .slide-button-inactive{
-  @apply w-[20px] h-[20px] rounded-full bg-stroke hover:cursor-pointer;
+  @apply w-[20px] h-[20px] rounded-full bg-stroke hover:cursor-pointer max-[768px]:w-[10px] max-[768px]:h-[10px];
 }
 
 .slide-button-active{
-  @apply w-[20px] h-[20px] rounded-full bg-white hover:cursor-pointer;
+  @apply w-[20px] h-[20px] rounded-full bg-white hover:cursor-pointer max-[768px]:w-[10px] max-[768px]:h-[10px];
 }

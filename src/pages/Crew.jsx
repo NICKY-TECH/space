@@ -19,9 +19,9 @@ function Crew() {
     <section className="crew">
       <Header items={mainNav} />
       <div className="crew-details-adjustment">
+      <PageLabel text="MEET YOUR CREW" number="02" />
         <div className="crew-main-section-one">
-          <PageLabel text="MEET YOUR CREW" number="02" />
-          <div className="main-planet-content">
+          <div className="main-crew-content">
             {selectedCrew === 0 ? (
               <CrewSectionOne
                 title="COMMANDER"
@@ -56,16 +56,14 @@ function Crew() {
   fly to the ISS, and the first Iranian in space. "
               />
             )}
-          </div>
-          <div className="slide-navigation">
+            <div className="slide-navigation">
             <SlideButton index="0" />
             <SlideButton index="1" />
             <SlideButton index="2" />
             <SlideButton index="3" />
           </div>
-        </div>
-
-        <div className="crew-image">
+          </div>
+          <div className="crew-image">
           {selectedCrew === 0 ? (
             <PageImage link={douglas} />
           ) : selectedCrew === 1 ? (
@@ -76,6 +74,9 @@ function Crew() {
             <PageImage link={ansari} />
           )}
         </div>
+        </div>
+
+        
       </div>
     </section>
   );
