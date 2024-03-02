@@ -643,6 +643,9 @@ video {
 .h-\[300px\]{
   height: 300px;
 }
+.h-\[50px\]{
+  height: 50px;
+}
 .h-\[600px\]{
   height: 600px;
 }
@@ -682,6 +685,9 @@ video {
 }
 .w-\[45\%\]{
   width: 45%;
+}
+.w-\[50px\]{
+  width: 50px;
 }
 .w-auto{
   width: auto;
@@ -792,6 +798,9 @@ video {
 }
 .flex-grow{
   flex-grow: 1;
+}
+.flex-grow-\[2\]{
+  flex-grow: 2;
 }
 .border-collapse{
   border-collapse: collapse;
@@ -933,6 +942,11 @@ video {
   margin-top: calc(11rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(11rem * var(--tw-space-y-reverse));
 }
+.space-y-6 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
 .overflow-clip{
   overflow: clip;
 }
@@ -943,6 +957,9 @@ video {
   border-radius: 9999px;
 }
 .border{
+  border-width: 1px;
+}
+.border-\[1px\]{
   border-width: 1px;
 }
 .border-b-4{
@@ -1010,6 +1027,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(249 115 22 / var(--tw-bg-opacity));
 }
+.bg-pink-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 168 212 / var(--tw-bg-opacity));
+}
 .bg-pink-400{
   --tw-bg-opacity: 1;
   background-color: rgb(244 114 182 / var(--tw-bg-opacity));
@@ -1025,6 +1046,10 @@ video {
 .bg-purple-300{
   --tw-bg-opacity: 1;
   background-color: rgb(216 180 254 / var(--tw-bg-opacity));
+}
+.bg-purple-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(192 132 252 / var(--tw-bg-opacity));
 }
 .bg-red-100{
   --tw-bg-opacity: 1;
@@ -1061,6 +1086,9 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-capsulePortrait{
+  background-image: url('/src/resources/images/technology/image-space-capsule-portrait.jpg');
+}
 .bg-desktopCrewBg{
   background-image: url('/src/resources/images/crew/background-crew-desktop.jpg');
 }
@@ -1069,6 +1097,9 @@ video {
 }
 .bg-desktopHomeBg{
   background-image: url('/src/resources/images/home/background-home-desktop.jpg');
+}
+.bg-desktopTechnologyBg{
+  background-image: url('/src/resources/images/technology/background-technology-desktop.jpg');
 }
 .bg-mobileCrewBg{
   background-image: url('/src/resources/images/crew/background-crew-mobile.jpg');
@@ -1079,6 +1110,15 @@ video {
 .bg-mobileHomeBg{
   background-image: url('/src/resources/images/home/background-home-mobile.jpg');
 }
+.bg-mobileTechnologyBg{
+  background-image: url('/src/resources/images/technology/background-technology-mobile.jpg');
+}
+.bg-spaceLandScape{
+  background-image: url('/src/resources/images/technology/image-spaceport-landscape.jpg');
+}
+.bg-spacePortrait{
+  background-image: url('/src/resources/images/technology/image-spaceport-portrait.jpg');
+}
 .bg-tabletCrewBg{
   background-image: url('/src/resources/images/crew/background-crew-tablet.jpg');
 }
@@ -1087,6 +1127,15 @@ video {
 }
 .bg-tabletHomeBg{
   background-image: url('/src/resources/images/home/background-home-tablet.jpg');
+}
+.bg-tabletTechnologyBg{
+  background-image: url('/src/resources/images/technology/background-technology-tablet.jpg');
+}
+.bg-vehicleLandScape{
+  background-image: url('/src/resources/images/technology/image-launch-vehicle-landscape.jpg');
+}
+.bg-vehiclePortrait{
+  background-image: url('/src/resources/images/technology/image-launch-vehicle-portrait.jpg');
 }
 .bg-cover{
   background-size: cover;
@@ -1174,6 +1223,9 @@ video {
 }
 .pr-14{
   padding-right: 3.5rem;
+}
+.pr-16{
+  padding-right: 4rem;
 }
 .pr-5{
   padding-right: 1.25rem;
@@ -1344,7 +1396,7 @@ main{
 
 .home{
   display: grid;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   grid-template-rows: repeat(12, minmax(0, 1fr));
@@ -1729,7 +1781,7 @@ header hr {
 
 .planet{
   display: grid;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   grid-template-rows: repeat(12, minmax(0, 1fr));
@@ -1755,7 +1807,7 @@ header hr {
 
 .crew{
   display: grid;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   grid-template-rows: repeat(12, minmax(0, 1fr));
@@ -1840,6 +1892,23 @@ header hr {
   }
 }
 
+.tech-section-one{
+  grid-column: span 6 / span 6;
+  grid-row: span 12 / span 12;
+  display: flex;
+  flex-direction: column;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (max-width: 768px){
+
+  .tech-section-one{
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .crew-main-section-one{
   grid-column: span 12 / span 12;
   grid-row: span 11 / span 11;
@@ -1856,20 +1925,21 @@ header hr {
 
 .crew-image{
   display: flex;
+  flex-grow: 2;
   align-items: flex-end;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .crew-image .page-image img{
   height: 600px;
   width: 100%;
-  padding-right: 3.5rem;
+  padding-right: 4rem;
 }
 
 @media (max-width: 768px){
 
   .crew-image .page-image img{
-    height: 100%;
+    height: 500px;
   }
 }
 
@@ -2165,6 +2235,186 @@ footer{
   }
 }
 
+.technology{
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: repeat(12, minmax(0, 1fr));
+  background-image: url('/src/resources/images/technology/background-technology-desktop.jpg');
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px){
+
+  .technology{
+    background-image: url('/src/resources/images/technology/background-technology-tablet.jpg');
+  }
+}
+
+@media (max-width: 665px){
+
+  .technology{
+    background-image: url('/src/resources/images/technology/background-technology-mobile.jpg');
+  }
+}
+
+@media (max-width: 313px){
+
+  .technology{
+    height: -moz-max-content;
+    height: max-content;
+    min-width: -moz-max-content;
+    min-width: max-content;
+  }
+}
+
+.technology-details-adjustment{
+  grid-column: span 12 / span 12;
+  grid-row: span 10 / span 10;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: repeat(12, minmax(0, 1fr));
+}
+
+.technology-details-adjustment > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(4rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(4rem * var(--tw-space-y-reverse));
+}
+
+.technology-details-adjustment{
+  padding-left: 3.5rem;
+}
+
+@media (max-width: 768px){
+
+  .technology-details-adjustment{
+    padding-right: 3.5rem;
+  }
+}
+
+
+.active-tech-slide{
+  display: flex;
+  height: 50px;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+
+.active-tech-slide:hover{
+  cursor: pointer;
+}
+
+.inactive-tech-slide{
+  display: flex;
+  height: 50px;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(151 151 151 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.inactive-tech-slide:hover{
+  cursor: pointer;
+} 
+
+
+.main-tech-content{
+  grid-column: span 12 / span 12;
+  grid-row: span 11 / span 11;
+  display: flex;
+  --tw-bg-opacity: 1;
+  background-color: rgb(192 132 252 / var(--tw-bg-opacity));
+}
+
+.tech-image-container{
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 168 212 / var(--tw-bg-opacity));
+  flex-grow: 2;
+}
+
+.tech-image-vehicle{
+  height: 100%;
+  background-image: url('/src/resources/images/technology/image-launch-vehicle-portrait.jpg');
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px){
+
+  .tech-image-vehicle{
+    background-image: url('/src/resources/images/technology/image-launch-vehicle-landscape.jpg');
+  }
+}
+
+.tech-image-space{
+  background-image: url('/src/resources/images/technology/image-spaceport-portrait.jpg');
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px){
+
+  .tech-image-space{
+    background-image: url('/src/resources/images/technology/image-spaceport-landscape.jpg');
+  }
+}
+
+.tech-image-capsule{
+  background-image: url('/src/resources/images/technology/image-space-capsule-portrait.jpg');
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px){
+
+  .tech-image-capsule{
+    background-image: url('/src/resources/images/technology/image-space-capsule-portrait.jpg');
+  }
+}
+
+.tech-content-container{
+  display: flex;
+  justify-content: center;
+}
+
+.tech-content-container > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.tech-display-button{
+  display: flex;
+  flex-direction: column;
+}
+
+.tech-display-button > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
 .hover\:cursor-pointer:hover{
   cursor: pointer;
 }
@@ -2198,10 +2448,6 @@ footer{
     display: none;
   }
 
-  .max-\[768px\]\:h-\[100\%\]{
-    height: 100%;
-  }
-
   .max-\[768px\]\:h-\[10px\]{
     height: 10px;
   }
@@ -2212,6 +2458,10 @@ footer{
 
   .max-\[768px\]\:h-\[220px\]{
     height: 220px;
+  }
+
+  .max-\[768px\]\:h-\[500px\]{
+    height: 500px;
   }
 
   .max-\[768px\]\:h-full{
@@ -2259,6 +2509,14 @@ footer{
     justify-content: space-between;
   }
 
+  .max-\[768px\]\:bg-capsulePortrait{
+    background-image: url('/src/resources/images/technology/image-space-capsule-portrait.jpg');
+  }
+
+  .max-\[768px\]\:bg-spaceLandScape{
+    background-image: url('/src/resources/images/technology/image-spaceport-landscape.jpg');
+  }
+
   .max-\[768px\]\:bg-tabletCrewBg{
     background-image: url('/src/resources/images/crew/background-crew-tablet.jpg');
   }
@@ -2269,6 +2527,14 @@ footer{
 
   .max-\[768px\]\:bg-tabletHomeBg{
     background-image: url('/src/resources/images/home/background-home-tablet.jpg');
+  }
+
+  .max-\[768px\]\:bg-tabletTechnologyBg{
+    background-image: url('/src/resources/images/technology/background-technology-tablet.jpg');
+  }
+
+  .max-\[768px\]\:bg-vehicleLandScape{
+    background-image: url('/src/resources/images/technology/image-launch-vehicle-landscape.jpg');
   }
 
   .max-\[768px\]\:pr-12{
@@ -2296,6 +2562,13 @@ footer{
   }
 }
 
+@media (max-width: 665px){
+
+  .max-\[665px\]\:bg-mobileTechnologyBg{
+    background-image: url('/src/resources/images/technology/background-technology-mobile.jpg');
+  }
+}
+
 @media (max-width: 655px){
 
   .max-\[655px\]\:flex{
@@ -2319,6 +2592,11 @@ footer{
 }
 
 @media (max-width: 313px){
+
+  .max-\[313px\]\:min-w-max{
+    min-width: -moz-max-content;
+    min-width: max-content;
+  }
 
   .max-\[313px\]\:text-\[80px\]{
     font-size: 80px;

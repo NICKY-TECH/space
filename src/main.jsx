@@ -4,10 +4,12 @@ import App from './App.jsx'
 import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 import selectCrew from './feature/selectCrew.js';
+import selectTech from './feature/selectTechnology.js';
 
 const store = configureStore({
   reducer: {
-selectCrew
+selectCrew,
+selectTech
 
   },
 });

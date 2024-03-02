@@ -43,6 +43,8 @@ export default {
           "url('/src/resources/images/technology/image-spaceport-landscape.jpg')",
         "spacePortrait":
           "url('/src/resources/images/technology/image-spaceport-portrait.jpg')",
+          "capsuleLand":"url('/src/resources/images/technology/image-space-capsule-landscape.jpg')",
+          "capsulePortrait":"url('/src/resources/images/technology/image-space-capsule-portrait.jpg')"
       },
       colors: {
         dilute: "#D0D6F9",
