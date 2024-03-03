@@ -16,6 +16,8 @@ export default {
           "url('/src/resources/images/crew/image-mark-shuttleworth.png')",
         "douglasPersonPng":
           "url('/src/resources/images/crew/image-douglas-hurley.png')",
+          "douglasPersonWeb":
+          "url('/src/resources/images/crew/image-douglas-hurley.webp')",
         "victorPersonPng": "url('/src/resources/images/crew/image-victor-glover.png')",
         "desktopDestinationBg":
           "url('/src/resources/images/destination/background-destination-desktop.jpg')",

@@ -6,6 +6,10 @@ import {
   SlideButton,
 } from "/src/index";
 import { useSelector } from "react-redux";
+import douglas from "/src/resources/images/crew/image-douglas-hurley.png";
+import mark from "/src/resources/images/crew/image-mark-shuttleworth.png";
+import victor from "/src/resources/images/crew/image-victor-glover.png";
+import ansari from "/src/resources/images/crew/image-anousheh-ansari.png"
 
 function Crew() {
   const selectedCrew = useSelector((state) => state.selectCrew.value);
@@ -62,8 +66,13 @@ function Crew() {
           </div>
           </div>
           <div className="crew-image">
-          <div className={selectedCrew===0?"crew-image-douglas":selectedCrew===1?"crew-image-mark":selectedCrew===2?"crew-image-victor":"crew-image-ansari"}>
-            </div>
+          
+         <div className="specific-crew-image">
+         {
+          selectedCrew ===0 ? <img src={douglas}/>:selectedCrew ===1?<img src={mark}/>:selectedCrew===2?<img src={victor}/>:<img src={ansari}/>
+         }
+
+         </div>
         </div>
         </div>
 

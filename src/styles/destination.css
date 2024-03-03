@@ -689,6 +689,9 @@ video {
 .max-h-screen{
   max-height: 100vh;
 }
+.min-h-screen{
+  min-height: 100vh;
+}
 .w-\[20px\]{
   width: 20px;
 }
@@ -697,6 +700,9 @@ video {
 }
 .w-\[45\%\]{
   width: 45%;
+}
+.w-\[50\%\]{
+  width: 50%;
 }
 .w-\[50px\]{
   width: 50px;
@@ -1138,6 +1144,9 @@ video {
 .bg-douglasPersonPng{
   background-image: url('/src/resources/images/crew/image-douglas-hurley.png');
 }
+.bg-douglasPersonWeb{
+  background-image: url('/src/resources/images/crew/image-douglas-hurley.webp');
+}
 .bg-markPersonPng{
   background-image: url('/src/resources/images/crew/image-mark-shuttleworth.png');
 }
@@ -1446,13 +1455,20 @@ html{
   font-family: Bellefair;
 }
 
-/* main {
-  @apply h-screen bg-black w-screen  max-[768px]:max-w-max max-[768px]:h-full;
-} */
-
 main{
-  height: inherit;
-  width: inherit;
+  height: 100vh;
+  width: 100vw;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+@media (max-width: 768px){
+
+  main{
+    height: 100%;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
 }
 
 .home{
@@ -1869,7 +1885,6 @@ header hr {
 .crew{
   display: grid;
   height: 100vh;
-  width: 100%;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   grid-template-rows: repeat(12, minmax(0, 1fr));
   background-image: url('/src/resources/images/crew/background-crew-desktop.jpg');
@@ -1892,36 +1907,25 @@ header hr {
   }
 }
 
-.crew-image-douglas{
-  height: 100%;
-  background-image: url('/src/resources/images/crew/image-douglas-hurley.png');
-  background-size: contain;
-  background-position: bottom;
-  background-repeat: no-repeat;
+/* .crew-image-douglas{
+  @apply bg-douglasPersonPng bg-no-repeat bg-contain h-full bg-bottom;
 }
 
 .crew-image-mark{
-  height: 100%;
-  background-image: url('/src/resources/images/crew/image-mark-shuttleworth.png');
-  background-size: contain;
-  background-position: bottom;
-  background-repeat: no-repeat;
+  @apply bg-markPersonPng bg-no-repeat bg-contain h-full bg-bottom;
 }
 
 .crew-image-victor{
-  height: 100%;
-  background-image: url('/src/resources/images/crew/image-victor-glover.png');
-  background-size: contain;
-  background-position: bottom;
-  background-repeat: no-repeat;
+  @apply bg-victorPersonPng bg-no-repeat bg-contain h-full bg-bottom;
 }
 
 .crew-image-ansari{
-  height: 100%;
-  background-image: url('/src/resources/images/crew/image-anousheh-ansari.png');
-  background-size: contain;
-  background-position: bottom;
-  background-repeat: no-repeat;
+  @apply bg-ansariPersonPng bg-no-repeat bg-contain h-full bg-bottom;
+} */
+
+.crew-image{
+  display: flex;
+  width: 50%;
 }
 
 @media (max-width: 768px){
@@ -1930,11 +1934,61 @@ header hr {
     order: 1;
     height: auto;
     width: 100%;
+    flex-direction: row;
+    justify-content: center;
   }
 }
 
-.crew-image{
-  flex-grow: 8;
+@media (min-width: 769px){
+
+  .crew-image{
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+}
+
+.main-crew-content{
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px){
+
+  .main-crew-content{
+    margin-bottom: 0.75rem;
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 655px){
+
+  .main-crew-content{
+    order: 9999;
+  }
+}
+
+@media (min-width: 769px){
+
+  .main-crew-content{
+    width: 50%;
+  }
+}
+
+
+
+.specific-crew-image img{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+@media (max-width: 768px){
+
+  .specific-crew-image img{
+    height: 23rem;
+  }
 }
 
 .planet-details-adjustment{
@@ -2063,36 +2117,6 @@ header hr {
 /* w-[70%] flex justify-center space-x-12 max-[768px]:order-2 max-[768px]:flex-col max-[768px]:space-y-7 max-[768px]:w-full max-[768px]:h-auto */
 
 
-.main-crew-content{
-  display: flex;
-  flex-direction: column;
-}
-
-
-@media (max-width: 768px){
-
-  .main-crew-content{
-    margin-bottom: 0.75rem;
-    height: auto;
-    width: 100%;
-  }
-}
-
-
-@media (max-width: 655px){
-
-  .main-crew-content{
-    order: 9999;
-  }
-}
-
-
-@media (min-width: 769px){
-
-  .main-crew-content{
-    width: 48%;
-  }
-}
 
 .planet-two{
   grid-column: span 12 / span 12;
@@ -2101,16 +2125,22 @@ header hr {
   align-items: center;
 }
 
+
+
 .planet-two > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+
+
 .planet-two{
   font-family: Barlow Condensed;
   font-size: 28px;
 }
+
+
 
 @media (max-width: 768px){
 
@@ -2119,12 +2149,16 @@ header hr {
   }
 }
 
+
+
 @media (max-width: 655px){
 
   .planet-two{
     justify-content: center;
   }
 }
+
+
 
 @media (max-width: 401px){
 
@@ -2703,6 +2737,10 @@ footer{
     height: 220px;
   }
 
+  .max-\[768px\]\:h-\[23rem\]{
+    height: 23rem;
+  }
+
   .max-\[768px\]\:h-\[33px\]{
     height: 33px;
   }
@@ -2762,6 +2800,10 @@ footer{
 
   .max-\[768px\]\:items-center{
     align-items: center;
+  }
+
+  .max-\[768px\]\:justify-end{
+    justify-content: flex-end;
   }
 
   .max-\[768px\]\:justify-center{
@@ -2851,6 +2893,10 @@ footer{
 
 @media (max-width: 665px){
 
+  .max-\[665px\]\:bg-mobileCrewBg{
+    background-image: url('/src/resources/images/crew/background-crew-mobile.jpg');
+  }
+
   .max-\[665px\]\:bg-mobileTechnologyBg{
     background-image: url('/src/resources/images/technology/background-technology-mobile.jpg');
   }
@@ -2910,8 +2956,8 @@ footer{
     display: flex;
   }
 
-  .min-\[769px\]\:w-\[48\%\]{
-    width: 48%;
+  .min-\[769px\]\:w-\[50\%\]{
+    width: 50%;
   }
 
   .min-\[769px\]\:w-\[60\%\]{
@@ -2934,8 +2980,16 @@ footer{
     flex-direction: row;
   }
 
+  .min-\[769px\]\:items-end{
+    align-items: flex-end;
+  }
+
   .min-\[769px\]\:items-center{
     align-items: center;
+  }
+
+  .min-\[769px\]\:justify-end{
+    justify-content: flex-end;
   }
 
   .min-\[769px\]\:space-x-10 > :not([hidden]) ~ :not([hidden]){
