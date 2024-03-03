@@ -67,15 +67,8 @@ function Crew() {
           </div>
           </div>
           <div className="crew-image">
-          {selectedCrew === 0 ? (
-            <PageImage link={douglas} />
-          ) : selectedCrew === 1 ? (
-            <PageImage link={mark} />
-          ) : selectedCrew === 2 ? (
-            <PageImage link={victor} />
-          ) : (
-            <PageImage link={ansari} />
-          )}
+          <div className={selectedCrew===0?"crew-image-douglas":selectedCrew===1?"crew-image-mark":selectedCrew===2?"crew-image-victor":"crew-image-ansari"}>
+            </div>
         </div>
         </div>
 

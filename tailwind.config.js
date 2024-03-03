@@ -10,13 +10,13 @@ export default {
           "url('/src/resources/images/crew/background-crew-desktop.jpg')",
         "tabletCrewBg":
           "url('/src/resources/images/crew/background-crew-tablet.jpg')",
-        "ansariPerson":
+        "ansariPersonPng":
           "url('/src/resources/images/crew/image-anousheh-ansari.png')",
-        "douglasPerson":
+        "douglasPersonPng":
           "url('/src/resources/images/crew/image-douglas-hurley.png')",
-        "hurleyPerson":
+        "hurleyPersonPng":
           "url('/src/resources/images/crew/image-douglas-hurley.png')",
-        "victorPerson": "url('/src/resources/images/crew/image-victor-glover.png')",
+        "victorPersonPng": "url('/src/resources/images/crew/image-victor-glover.png')",
         "desktopDestinationBg":
           "url('/src/resources/images/destination/background-destination-desktop.jpg')",
         "mobileDestinationBg":

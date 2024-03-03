@@ -517,6 +517,9 @@ video {
 .order-2{
   order: 2;
 }
+.order-last{
+  order: 9999;
+}
 .col-span-12{
   grid-column: span 12 / span 12;
 }
@@ -652,8 +655,8 @@ video {
 .h-\[50px\]{
   height: 50px;
 }
-.h-\[600px\]{
-  height: 600px;
+.h-auto{
+  height: auto;
 }
 .h-fit{
   height: -moz-fit-content;
@@ -808,9 +811,6 @@ video {
 .flex-grow{
   flex-grow: 1;
 }
-.flex-grow-\[2\]{
-  flex-grow: 2;
-}
 .border-collapse{
   border-collapse: collapse;
 }
@@ -961,11 +961,19 @@ video {
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
+.space-y-7 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
+}
 .overflow-clip{
   overflow: clip;
 }
 .overflow-x-hidden{
   overflow-x: hidden;
+}
+.overflow-y-clip{
+  overflow-y: clip;
 }
 .rounded-full{
   border-radius: 9999px;
@@ -1115,6 +1123,9 @@ video {
 .bg-desktopTechnologyBg{
   background-image: url('/src/resources/images/technology/background-technology-desktop.jpg');
 }
+.bg-douglasPersonPng{
+  background-image: url('/src/resources/images/crew/image-douglas-hurley.png');
+}
 .bg-mobileCrewBg{
   background-image: url('/src/resources/images/crew/background-crew-mobile.jpg');
 }
@@ -1151,11 +1162,23 @@ video {
 .bg-vehiclePortrait{
   background-image: url('/src/resources/images/technology/image-launch-vehicle-portrait.jpg');
 }
+.bg-contain{
+  background-size: contain;
+}
 .bg-cover{
   background-size: cover;
 }
 .bg-\[100\%\]{
   background-position: 100%;
+}
+.bg-bottom{
+  background-position: bottom;
+}
+.bg-center{
+  background-position: center;
+}
+.bg-left-bottom{
+  background-position: left bottom;
 }
 .bg-no-repeat{
   background-repeat: no-repeat;
@@ -1201,6 +1224,9 @@ video {
 }
 .pb-10{
   padding-bottom: 2.5rem;
+}
+.pb-12{
+  padding-bottom: 3rem;
 }
 .pl-10{
   padding-left: 2.5rem;
@@ -1319,6 +1345,9 @@ video {
 .font-normal{
   font-weight: 400;
 }
+.font-semibold{
+  font-weight: 600;
+}
 .tracking-wider{
   letter-spacing: 0.05em;
 }
@@ -1406,14 +1435,6 @@ main{
     height: 100%;
     max-width: -moz-max-content;
     max-width: max-content;
-  }
-}
-
-@media (max-width: 655px){
-
-  main{
-    max-width: -moz-fit-content;
-    max-width: fit-content;
   }
 }
 
@@ -1854,6 +1875,32 @@ header hr {
   }
 }
 
+.crew-image-douglas{
+  height: 100%;
+  background-image: url('/src/resources/images/crew/image-douglas-hurley.png');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.crew-image{
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 168 212 / var(--tw-bg-opacity));
+}
+
+@media (max-width: 768px){
+
+  .crew-image{
+    order: 1;
+    height: auto;
+    width: 100%;
+  }
+}
+
+.crew-image{
+  flex-grow: 8;
+}
+
 .planet-details-adjustment{
   grid-column: span 12 / span 12;
   grid-row: span 10 / span 10;
@@ -1915,12 +1962,16 @@ header hr {
   }
 }
 
+
+
 .tech-section-one{
   display: flex;
   flex-direction: column;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+
+
 
 @media (max-width: 768px){
 
@@ -1934,16 +1985,28 @@ header hr {
   font-size: 40px;
 }
 
+@media (max-width: 768px){
+
+  .tech-section-one .planet-main-title{
+    font-size: 25px;
+  }
+}
+
 .tech-section-one .crew-title{
   font-size: 15px;
   --tw-text-opacity: 1;
   color: rgb(208 214 249 / var(--tw-text-opacity));
 }
 
+.tech-section-one .text-container-planet{
+  width: 100%;
+}
+
 .crew-main-section-one{
   grid-column: span 12 / span 12;
   grid-row: span 11 / span 11;
   display: flex;
+  gap: 1.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(74 222 128 / var(--tw-bg-opacity));
 }
@@ -1954,32 +2017,37 @@ header hr {
     flex-direction: column;
     align-items: center;
   }
-}
 
-.crew-image{
-  display: flex;
-  flex-grow: 2;
-  align-items: flex-end;
-  justify-content: flex-end;
-}
-
-.crew-image .page-image img{
-  height: 600px;
-  width: 100%;
-  padding-right: 4rem;
-}
-
-@media (max-width: 768px){
-
-  .crew-image .page-image img{
-    height: 500px;
+  .crew-main-section-one .main-crew-content{
+    height: 50%;
   }
 }
 
+
+
+/* w-[70%] flex justify-center space-x-12 max-[768px]:order-2 max-[768px]:flex-col max-[768px]:space-y-7 max-[768px]:w-full max-[768px]:h-auto */
+
+
+.main-crew-content{
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media (max-width: 768px){
+
+  .main-crew-content{
+    margin-bottom: 0.75rem;
+    height: auto;
+    width: 100%;
+  }
+}
+
+
 @media (max-width: 655px){
 
-  .crew-image .page-image img{
-    height: 300px;
+  .main-crew-content{
+    order: 9999;
   }
 }
 
@@ -2061,25 +2129,6 @@ header hr {
   }
 }
 
-.main-crew-content{
-  display: flex;
-  flex-direction: column;
-}
-
-@media (max-width: 768px){
-
-  .main-crew-content{
-    margin-bottom: 0.75rem;
-  }
-}
-
-@media (max-width: 655px){
-
-  .main-crew-content{
-    order: 9999;
-  }
-}
-
 @media (max-width: 768px){
 
   .crew-section-one .text-container-planet{
@@ -2128,6 +2177,13 @@ background-color: beige;
   }
 }
 
+@media (max-width: 655px){
+
+  .moon-details h2{
+    font-size: 25px;
+  }
+}
+
 .page-image{
   padding-left: 2rem;
 }
@@ -2140,8 +2196,16 @@ background-color: beige;
   }
 }
 
+@media (max-width: 313px){
+
+  .main-planet-content .page-image img{
+    width: 130px;
+  }
+}
+
 footer{
   display: flex;
+  justify-content: space-between;
   border-top-width: 1px;
   border-style: solid;
   --tw-border-opacity: 1;
@@ -2153,14 +2217,13 @@ footer{
 
   footer{
     width: 100%;
-    justify-content: space-between;
   }
 }
 
 @media (min-width: 769px){
 
   footer{
-    width: 40%;
+    width: 60%;
   }
 
   footer > :not([hidden]) ~ :not([hidden]){
@@ -2208,17 +2271,23 @@ footer{
   }
 }
 
+
+
 .slide-navigation{
   margin-top: auto;
   margin-bottom: auto;
   display: flex;
 }
 
+
+
 .slide-navigation > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
+
+
 
 @media (max-width: 768px){
 
@@ -2299,8 +2368,6 @@ footer{
   .technology{
     height: -moz-max-content;
     height: max-content;
-    min-width: -moz-max-content;
-    min-width: max-content;
   }
 }
 
@@ -2318,13 +2385,10 @@ footer{
   margin-bottom: calc(4rem * var(--tw-space-y-reverse));
 }
 
-.technology-details-adjustment{
-  padding-left: 3.5rem;
-}
-
-@media (max-width: 768px){
+@media (min-width: 769px){
 
   .technology-details-adjustment{
+    padding-left: 3.5rem;
     padding-right: 3.5rem;
   }
 }
@@ -2349,6 +2413,15 @@ footer{
   cursor: pointer;
 }
 
+
+@media (max-width: 768px){
+
+  .active-tech-slide{
+    height: 33px;
+    width: 33px;
+  }
+}
+
 .inactive-tech-slide{
   display: flex;
   height: 50px;
@@ -2366,6 +2439,14 @@ footer{
 
 .inactive-tech-slide:hover{
   cursor: pointer;
+}
+
+@media (max-width: 768px){
+
+  .inactive-tech-slide{
+    height: 33px;
+    width: 33px;
+  }
 } 
 
 
@@ -2373,6 +2454,7 @@ footer{
   grid-column: span 12 / span 12;
   grid-row: span 11 / span 11;
   display: flex;
+  gap: 1.5rem;
 } 
 
 
@@ -2381,7 +2463,6 @@ footer{
   .main-tech-content{
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
   }
 }
 
@@ -2391,7 +2472,7 @@ footer{
   height: 100%;
   background-image: url('/src/resources/images/technology/image-launch-vehicle-portrait.jpg');
   background-size: cover;
-  background-position: 100%;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -2408,7 +2489,7 @@ footer{
   height: 100%;
   background-image: url('/src/resources/images/technology/image-spaceport-portrait.jpg');
   background-size: cover;
-  background-position: 100%;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -2416,6 +2497,7 @@ footer{
 
   .tech-image-space{
     background-image: url('/src/resources/images/technology/image-spaceport-landscape.jpg');
+    background-position: left bottom;
   }
 }
 
@@ -2423,7 +2505,7 @@ footer{
   height: 100%;
   background-image: url('/src/resources/images/technology/image-space-capsule-portrait.jpg');
   background-size: cover;
-  background-position: 100%;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -2435,7 +2517,6 @@ footer{
 }
 
 .tech-image-container{
-  width: 100%;
   --tw-bg-opacity: 1;
   background-color: rgb(249 168 212 / var(--tw-bg-opacity));
 }
@@ -2444,12 +2525,20 @@ footer{
 
   .tech-image-container{
     order: 1;
+    height: auto;
     width: 100%;
   }
 }
 
+@media (min-width: 769px){
+
+  .tech-image-container{
+    padding-bottom: 3rem;
+  }
+}
+
 .tech-image-container{
-  flex-grow: 5;
+  flex-grow: 8;
 }
 
 
@@ -2467,15 +2556,12 @@ footer{
 }
 
 
-.tech-content-container{
-  padding-bottom: 2.5rem;
-}
-
-
 @media (max-width: 768px){
 
   .tech-content-container{
     order: 2;
+    height: auto;
+    width: 100%;
     flex-direction: column;
   }
 
@@ -2567,12 +2653,16 @@ footer{
     height: 220px;
   }
 
-  .max-\[768px\]\:h-\[500px\]{
-    height: 500px;
+  .max-\[768px\]\:h-\[33px\]{
+    height: 33px;
   }
 
-  .max-\[768px\]\:h-full{
-    height: 100%;
+  .max-\[768px\]\:h-\[50\%\]{
+    height: 50%;
+  }
+
+  .max-\[768px\]\:h-auto{
+    height: auto;
   }
 
   .max-\[768px\]\:w-\[100\%\]{
@@ -2589,6 +2679,10 @@ footer{
 
   .max-\[768px\]\:w-\[220px\]{
     width: 220px;
+  }
+
+  .max-\[768px\]\:w-\[33px\]{
+    width: 33px;
   }
 
   .max-\[768px\]\:w-\[90\%\]{
@@ -2624,14 +2718,16 @@ footer{
     justify-content: space-between;
   }
 
-  .max-\[768px\]\:gap-6{
-    gap: 1.5rem;
-  }
-
   .max-\[768px\]\:space-x-6 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
     margin-right: calc(1.5rem * var(--tw-space-x-reverse));
     margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .max-\[768px\]\:space-y-7 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
   }
 
   .max-\[768px\]\:bg-capsulePortrait{
@@ -2662,6 +2758,10 @@ footer{
     background-image: url('/src/resources/images/technology/image-launch-vehicle-landscape.jpg');
   }
 
+  .max-\[768px\]\:bg-left-bottom{
+    background-position: left bottom;
+  }
+
   .max-\[768px\]\:pr-12{
     padding-right: 3rem;
   }
@@ -2682,6 +2782,10 @@ footer{
     font-size: 20px;
   }
 
+  .max-\[768px\]\:text-\[25px\]{
+    font-size: 25px;
+  }
+
   .max-\[768px\]\:text-\[30px\]{
     font-size: 30px;
   }
@@ -2696,6 +2800,10 @@ footer{
 
 @media (max-width: 655px){
 
+  .max-\[655px\]\:order-last{
+    order: 9999;
+  }
+
   .max-\[655px\]\:flex{
     display: flex;
   }
@@ -2704,8 +2812,8 @@ footer{
     display: none;
   }
 
-  .max-\[655px\]\:h-\[300px\]{
-    height: 300px;
+  .max-\[655px\]\:text-\[25px\]{
+    font-size: 25px;
   }
 }
 
@@ -2718,9 +2826,8 @@ footer{
 
 @media (max-width: 313px){
 
-  .max-\[313px\]\:min-w-max{
-    min-width: -moz-max-content;
-    min-width: max-content;
+  .max-\[313px\]\:w-\[130px\]{
+    width: 130px;
   }
 
   .max-\[313px\]\:text-\[80px\]{
@@ -2745,8 +2852,8 @@ footer{
     display: flex;
   }
 
-  .min-\[769px\]\:w-\[40\%\]{
-    width: 40%;
+  .min-\[769px\]\:w-\[60\%\]{
+    width: 60%;
   }
 
   .min-\[769px\]\:w-\[90\%\]{
@@ -2785,6 +2892,18 @@ footer{
     --tw-space-y-reverse: 0;
     margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+  }
+
+  .min-\[769px\]\:pb-12{
+    padding-bottom: 3rem;
+  }
+
+  .min-\[769px\]\:pl-14{
+    padding-left: 3.5rem;
+  }
+
+  .min-\[769px\]\:pr-14{
+    padding-right: 3.5rem;
   }
 }
 
