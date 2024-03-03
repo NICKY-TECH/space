@@ -129,11 +129,23 @@ header hr {
 }
 
 .crew-image-douglas{
-  @apply bg-douglasPersonPng bg-no-repeat bg-cover h-full bg-bottom;
+  @apply bg-douglasPersonPng bg-no-repeat bg-contain h-full bg-bottom;
+}
+
+.crew-image-mark{
+  @apply bg-markPersonPng bg-no-repeat bg-contain h-full bg-bottom;
+}
+
+.crew-image-victor{
+  @apply bg-victorPersonPng bg-no-repeat bg-contain h-full bg-bottom;
+}
+
+.crew-image-ansari{
+  @apply bg-ansariPersonPng bg-no-repeat bg-contain h-full bg-bottom;
 }
 
 .crew-image{
-  @apply  max-[768px]:order-1 max-[768px]:w-[100%] bg-pink-300 max-[768px]:h-auto;
+  @apply  max-[768px]:order-1 max-[768px]:w-[100%] max-[768px]:h-auto;
   flex-grow: 8;
 }
 
@@ -147,7 +159,7 @@ header hr {
 
 
 .crew-section-one{
-  @apply text-white flex flex-col  row-span-12 col-span-6 mt-28 max-[768px]:justify-center max-[768px]:items-center;
+  @apply text-white flex flex-col  row-span-12 col-span-6 mt-28 max-[768px]:justify-center max-[768px]:items-center w-full ;
 }
 
 
@@ -170,20 +182,20 @@ header hr {
 }
 
 .crew-main-section-one{
-  @apply row-span-11 col-span-12  flex max-[768px]:flex-col max-[768px]:items-center gap-6 bg-green-400;
+  @apply row-span-11 col-span-12  flex max-[768px]:flex-col max-[768px]:items-center max-[768px]:gap-6 ;
 }
 
-.crew-main-section-one .main-crew-content {
+/* .crew-main-section-one .main-crew-content {
   @apply max-[768px]:h-[50%]
 }
-
+ */
 
 
 /* w-[70%] flex justify-center space-x-12 max-[768px]:order-2 max-[768px]:flex-col max-[768px]:space-y-7 max-[768px]:w-full max-[768px]:h-auto */
 
 
 .main-crew-content{
-  @apply flex flex-col max-[768px]:mb-3 max-[655px]:order-last  max-[768px]:w-full max-[768px]:h-auto;
+  @apply flex flex-col max-[768px]:mb-3 max-[655px]:order-last  max-[768px]:w-full max-[768px]:h-auto min-[769px]:w-[48%];
 }
 
 .planet-two {
@@ -203,7 +215,7 @@ header hr {
 }
 
 .crew-section-one .text-container-planet{
-  @apply max-[768px]:text-justify
+  @apply max-[768px]:text-center w-[80%]
 }
 
 .sub-planet-component {
@@ -300,25 +312,24 @@ footer {
 
 
 .tech-image-vehicle{
-  @apply bg-vehiclePortrait max-[768px]:bg-vehicleLandScape bg-no-repeat bg-cover h-full bg-center;
+  @apply bg-vehiclePortrait max-[768px]:bg-vehicleLandScape bg-no-repeat bg-cover h-full bg-center max-[768px]:bg-[100%] max-[768px]:bg-cover  w-full;
 }
 
 .tech-image-space{
-  @apply bg-spacePortrait max-[768px]:bg-spaceLandScape bg-no-repeat bg-cover h-full bg-center max-[768px]:bg-left-bottom
+  @apply bg-spacePortrait max-[768px]:bg-spaceLandScape bg-no-repeat bg-cover h-full bg-center max-[768px]:bg-[100%] max-[768px]:bg-cover  w-full;
 }
 
 .tech-image-capsule{
-  @apply bg-capsulePortrait max-[768px]:bg-capsulePortrait bg-no-repeat bg-cover bg-center h-full
+  @apply bg-capsulePortrait max-[768px]:bg-capsulePortrait bg-no-repeat bg-cover h-full bg-center max-[768px]:bg-[100%] max-[768px]:bg-cover  w-full;
 }
 
 .tech-image-container{
-  @apply  max-[768px]:order-1 max-[768px]:w-[100%] min-[769px]:pb-12 bg-pink-300 max-[768px]:h-auto;
-  flex-grow: 8;
+  @apply  max-[768px]:order-1 max-[768px]:w-[100%] min-[769px]:pb-12 max-[768px]:h-auto flex-grow-[8];
 }
 
 
 .tech-content-container{
-  @apply w-[70%] flex justify-center space-x-12 max-[768px]:order-2 max-[768px]:flex-col max-[768px]:space-y-7 max-[768px]:w-full max-[768px]:h-auto;
+  @apply w-[70%] flex justify-center space-x-12 max-[768px]:order-2 max-[768px]:flex-col max-[768px]:space-y-7 max-[768px]:w-full max-[768px]:flex-grow-[9];
 }
 
 .tech-display-button{

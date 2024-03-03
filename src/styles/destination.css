@@ -505,6 +505,9 @@ video {
 .collapse{
   visibility: collapse;
 }
+.fixed{
+  position: fixed;
+}
 .relative{
   position: relative;
 }
@@ -701,6 +704,9 @@ video {
 .w-\[70\%\]{
   width: 70%;
 }
+.w-\[80\%\]{
+  width: 80%;
+}
 .w-auto{
   width: auto;
 }
@@ -810,6 +816,9 @@ video {
 }
 .flex-grow{
   flex-grow: 1;
+}
+.flex-grow-\[8\]{
+  flex-grow: 8;
 }
 .border-collapse{
   border-collapse: collapse;
@@ -1108,6 +1117,9 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-ansariPersonPng{
+  background-image: url('/src/resources/images/crew/image-anousheh-ansari.png');
+}
 .bg-capsulePortrait{
   background-image: url('/src/resources/images/technology/image-space-capsule-portrait.jpg');
 }
@@ -1125,6 +1137,9 @@ video {
 }
 .bg-douglasPersonPng{
   background-image: url('/src/resources/images/crew/image-douglas-hurley.png');
+}
+.bg-markPersonPng{
+  background-image: url('/src/resources/images/crew/image-mark-shuttleworth.png');
 }
 .bg-mobileCrewBg{
   background-image: url('/src/resources/images/crew/background-crew-mobile.jpg');
@@ -1162,11 +1177,20 @@ video {
 .bg-vehiclePortrait{
   background-image: url('/src/resources/images/technology/image-launch-vehicle-portrait.jpg');
 }
+.bg-victorPersonPng{
+  background-image: url('/src/resources/images/crew/image-victor-glover.png');
+}
+.bg-auto{
+  background-size: auto;
+}
 .bg-contain{
   background-size: contain;
 }
 .bg-cover{
   background-size: cover;
+}
+.bg-fixed{
+  background-attachment: fixed;
 }
 .bg-\[100\%\]{
   background-position: 100%;
@@ -1878,14 +1902,33 @@ header hr {
 .crew-image-douglas{
   height: 100%;
   background-image: url('/src/resources/images/crew/image-douglas-hurley.png');
-  background-size: cover;
+  background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
 }
 
-.crew-image{
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 168 212 / var(--tw-bg-opacity));
+.crew-image-mark{
+  height: 100%;
+  background-image: url('/src/resources/images/crew/image-mark-shuttleworth.png');
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.crew-image-victor{
+  height: 100%;
+  background-image: url('/src/resources/images/crew/image-victor-glover.png');
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.crew-image-ansari{
+  height: 100%;
+  background-image: url('/src/resources/images/crew/image-anousheh-ansari.png');
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 768px){
@@ -1948,6 +1991,7 @@ header hr {
   grid-row: span 12 / span 12;
   margin-top: 7rem;
   display: flex;
+  width: 100%;
   flex-direction: column;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -2006,9 +2050,6 @@ header hr {
   grid-column: span 12 / span 12;
   grid-row: span 11 / span 11;
   display: flex;
-  gap: 1.5rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
 }
 
 @media (max-width: 768px){
@@ -2016,13 +2057,14 @@ header hr {
   .crew-main-section-one{
     flex-direction: column;
     align-items: center;
-  }
-
-  .crew-main-section-one .main-crew-content{
-    height: 50%;
+    gap: 1.5rem;
   }
 }
 
+/* .crew-main-section-one .main-crew-content {
+  @apply max-[768px]:h-[50%]
+}
+ */
 
 
 /* w-[70%] flex justify-center space-x-12 max-[768px]:order-2 max-[768px]:flex-col max-[768px]:space-y-7 max-[768px]:w-full max-[768px]:h-auto */
@@ -2048,6 +2090,14 @@ header hr {
 
   .main-crew-content{
     order: 9999;
+  }
+}
+
+
+@media (min-width: 769px){
+
+  .main-crew-content{
+    width: 48%;
   }
 }
 
@@ -2129,10 +2179,14 @@ header hr {
   }
 }
 
+.crew-section-one .text-container-planet{
+  width: 80%;
+}
+
 @media (max-width: 768px){
 
   .crew-section-one .text-container-planet{
-    text-align: justify;
+    text-align: center;
   }
 
   .sub-planet-component{
@@ -2470,6 +2524,7 @@ footer{
 
 .tech-image-vehicle{
   height: 100%;
+  width: 100%;
   background-image: url('/src/resources/images/technology/image-launch-vehicle-portrait.jpg');
   background-size: cover;
   background-position: center;
@@ -2482,11 +2537,14 @@ footer{
 
   .tech-image-vehicle{
     background-image: url('/src/resources/images/technology/image-launch-vehicle-landscape.jpg');
+    background-size: cover;
+    background-position: 100%;
   }
 }
 
 .tech-image-space{
   height: 100%;
+  width: 100%;
   background-image: url('/src/resources/images/technology/image-spaceport-portrait.jpg');
   background-size: cover;
   background-position: center;
@@ -2497,12 +2555,14 @@ footer{
 
   .tech-image-space{
     background-image: url('/src/resources/images/technology/image-spaceport-landscape.jpg');
-    background-position: left bottom;
+    background-size: cover;
+    background-position: 100%;
   }
 }
 
 .tech-image-capsule{
   height: 100%;
+  width: 100%;
   background-image: url('/src/resources/images/technology/image-space-capsule-portrait.jpg');
   background-size: cover;
   background-position: center;
@@ -2513,12 +2573,13 @@ footer{
 
   .tech-image-capsule{
     background-image: url('/src/resources/images/technology/image-space-capsule-portrait.jpg');
+    background-size: cover;
+    background-position: 100%;
   }
 }
 
 .tech-image-container{
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 168 212 / var(--tw-bg-opacity));
+  flex-grow: 8;
 }
 
 @media (max-width: 768px){
@@ -2535,10 +2596,6 @@ footer{
   .tech-image-container{
     padding-bottom: 3rem;
   }
-}
-
-.tech-image-container{
-  flex-grow: 8;
 }
 
 
@@ -2560,8 +2617,8 @@ footer{
 
   .tech-content-container{
     order: 2;
-    height: auto;
     width: 100%;
+    flex-grow: 9;
     flex-direction: column;
   }
 
@@ -2698,6 +2755,10 @@ footer{
     max-width: max-content;
   }
 
+  .max-\[768px\]\:flex-grow-\[9\]{
+    flex-grow: 9;
+  }
+
   .max-\[768px\]\:flex-row{
     flex-direction: row;
   }
@@ -2716,6 +2777,10 @@ footer{
 
   .max-\[768px\]\:justify-between{
     justify-content: space-between;
+  }
+
+  .max-\[768px\]\:gap-6{
+    gap: 1.5rem;
   }
 
   .max-\[768px\]\:space-x-6 > :not([hidden]) ~ :not([hidden]){
@@ -2758,8 +2823,12 @@ footer{
     background-image: url('/src/resources/images/technology/image-launch-vehicle-landscape.jpg');
   }
 
-  .max-\[768px\]\:bg-left-bottom{
-    background-position: left bottom;
+  .max-\[768px\]\:bg-cover{
+    background-size: cover;
+  }
+
+  .max-\[768px\]\:bg-\[100\%\]{
+    background-position: 100%;
   }
 
   .max-\[768px\]\:pr-12{
@@ -2772,10 +2841,6 @@ footer{
 
   .max-\[768px\]\:text-center{
     text-align: center;
-  }
-
-  .max-\[768px\]\:text-justify{
-    text-align: justify;
   }
 
   .max-\[768px\]\:text-\[20px\]{
@@ -2850,6 +2915,10 @@ footer{
 
   .min-\[769px\]\:flex{
     display: flex;
+  }
+
+  .min-\[769px\]\:w-\[48\%\]{
+    width: 48%;
   }
 
   .min-\[769px\]\:w-\[60\%\]{

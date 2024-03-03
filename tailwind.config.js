@@ -12,9 +12,9 @@ export default {
           "url('/src/resources/images/crew/background-crew-tablet.jpg')",
         "ansariPersonPng":
           "url('/src/resources/images/crew/image-anousheh-ansari.png')",
+        "markPersonPng":
+          "url('/src/resources/images/crew/image-mark-shuttleworth.png')",
         "douglasPersonPng":
-          "url('/src/resources/images/crew/image-douglas-hurley.png')",
-        "hurleyPersonPng":
           "url('/src/resources/images/crew/image-douglas-hurley.png')",
         "victorPersonPng": "url('/src/resources/images/crew/image-victor-glover.png')",
         "desktopDestinationBg":

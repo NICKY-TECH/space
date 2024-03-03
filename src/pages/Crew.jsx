@@ -3,13 +3,8 @@ import {
   Header,
   PageLabel,
   CrewSectionOne,
-  PageImage,
   SlideButton,
 } from "/src/index";
-import douglas from "/src/resources/images/crew/image-douglas-hurley.png";
-import mark from "/src/resources/images/crew/image-mark-shuttleworth.png";
-import victor from "/src/resources/images/crew/image-victor-glover.png";
-import ansari from "/src/resources/images/crew/image-anousheh-ansari.png";
 import { useSelector } from "react-redux";
 
 function Crew() {
