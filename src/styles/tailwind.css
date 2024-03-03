@@ -15,8 +15,13 @@ html {
   @apply w-full h-full font-Bellefair;
 }
 
-main {
+/* main {
   @apply h-screen bg-black w-screen  max-[768px]:max-w-max max-[768px]:h-full;
+} */
+
+main{
+  height: inherit;
+  width: inherit;
 }
 
 .home {
