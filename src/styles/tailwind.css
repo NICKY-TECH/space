@@ -142,11 +142,19 @@ header hr {
 }
 
 .tech-section-one{
-  @apply text-white flex flex-col  row-span-12 col-span-6 max-[768px]:justify-center max-[768px]:items-center;
+  @apply text-white flex flex-col  max-[768px]:justify-center max-[768px]:items-center;
+}
+
+.tech-section-one .planet-main-title{
+  @apply text-[40px]
+}
+
+.tech-section-one .crew-title{
+  @apply text-[15px] text-dilute;
 }
 
 .crew-main-section-one{
-  @apply row-span-11 col-span-12 flex  max-[768px]:flex-col  max-[768px]:items-center ;
+  @apply row-span-11 col-span-12 flex  max-[768px]:flex-col  max-[768px]:items-center  bg-green-400;
 }
 
 .crew-image{
@@ -259,30 +267,33 @@ footer {
 
 
 .main-tech-content{
-  @apply row-span-11 col-span-12  flex   bg-purple-400
+  @apply row-span-11 col-span-12  flex max-[768px]:flex-col max-[768px]:items-center max-[768px]:gap-6
 }
 
-.tech-image-container{
-  @apply bg-pink-300;
-  flex-grow: 2;
-}
+
 
 .tech-image-vehicle{
   @apply bg-vehiclePortrait max-[768px]:bg-vehicleLandScape bg-no-repeat bg-[100%] bg-cover h-full;
 }
 
 .tech-image-space{
-  @apply bg-spacePortrait max-[768px]:bg-spaceLandScape bg-no-repeat bg-[100%] bg-cover
+  @apply bg-spacePortrait max-[768px]:bg-spaceLandScape bg-no-repeat bg-[100%] bg-cover h-full
 }
 
 .tech-image-capsule{
-  @apply bg-capsulePortrait max-[768px]:bg-capsulePortrait bg-no-repeat bg-[100%] bg-cover
+  @apply bg-capsulePortrait max-[768px]:bg-capsulePortrait bg-no-repeat bg-[100%] bg-cover h-full
 }
 
+.tech-image-container{
+  @apply bg-pink-300 w-full max-[768px]:order-1 max-[768px]:w-[100%];
+  flex-grow: 5;
+}
+
+
 .tech-content-container{
-  @apply flex justify-center space-x-3
+  @apply flex justify-center w-[70%] pb-10 space-x-12 max-[768px]:order-2 max-[768px]:flex-col max-[768px]:space-y-7;
 }
 
 .tech-display-button{
-  @apply flex flex-col space-y-6
+  @apply flex flex-col min-[769px]:space-y-6 max-[768px]:flex-row max-[768px]:justify-center  max-[768px]:space-x-6
 }
