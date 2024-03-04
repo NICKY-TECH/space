@@ -121,7 +121,7 @@ header hr {
 }
 
 .planet {
-  @apply grid grid-cols-12 h-max grid-rows-[160px,1fr] bg-desktopDestinationBg bg-no-repeat bg-[100%] bg-cover w-full max-[768px]:bg-tabletDestinationBg max-[665px]:bg-mobileDestinationBg;
+  @apply grid grid-cols-12 h-max lg:h-full xl:h-full grid-rows-[160px,1fr] bg-desktopDestinationBg bg-no-repeat bg-[100%] bg-cover w-full max-[768px]:bg-tabletDestinationBg max-[665px]:bg-mobileDestinationBg;
 }
 
 .crew {
