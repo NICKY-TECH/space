@@ -38,7 +38,7 @@ main {
 } */
 
 header {
-  @apply pl-4 flex row-span-1 w-full col-span-12 my-4 min-[769px]:space-x-4 max-[768px]:justify-between max-[655px]:pr-4;
+  @apply pl-4 flex row-span-1 w-full col-span-12  min-[769px]:space-x-4 max-[768px]:justify-between max-[655px]:pr-4;
 }
 
 .ham-menu {
