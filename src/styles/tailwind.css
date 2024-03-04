@@ -30,7 +30,7 @@ main {
 
 
 .home {
-  @apply grid grid-cols-12 grid-rows-4 bg-desktopHomeBg bg-no-repeat bg-[100%] bg-cover max-[768px]:bg-tabletHomeBg max-[655px]:bg-mobileHomeBg   md:h-full lg:h-full  xl:h-screen;
+  @apply grid grid-cols-12 grid-rows-4 bg-desktopHomeBg bg-no-repeat bg-[100%] bg-cover max-[768px]:bg-tabletHomeBg max-[655px]:bg-mobileHomeBg   h-screen;
 }
 
 /* header {
