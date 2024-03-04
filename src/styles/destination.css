@@ -862,8 +862,8 @@ video {
 .grid-rows-5{
   grid-template-rows: repeat(5, minmax(0, 1fr));
 }
-.grid-rows-\[200px\2c 800px\]{
-  grid-template-rows: 200px 800px;
+.grid-rows-\[200px\2c 1fr\]{
+  grid-template-rows: 200px 1fr;
 }
 .flex-row{
   flex-direction: row;
@@ -912,6 +912,9 @@ video {
 }
 .gap-6{
   gap: 1.5rem;
+}
+.gap-8{
+  gap: 2rem;
 }
 .gap-9{
   gap: 2.25rem;
@@ -1499,24 +1502,31 @@ main{
   height: 100%;
   width: 100%;
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  grid-template-rows: 200px 800px;
-  background-image: url('/src/resources/images/home/background-home-desktop.jpg');
+  grid-template-rows: 200px 1fr;
   background-size: cover;
   background-position: 100%;
   background-repeat: no-repeat;
 }
 
-@media (max-width: 768px){
+@media (min-width: 640px){
+
+  .home{
+    background-image: url('/src/resources/images/home/background-home-mobile.jpg');
+  }
+}
+
+@media (min-width: 1024px){
 
   .home{
     background-image: url('/src/resources/images/home/background-home-tablet.jpg');
   }
 }
 
-@media (max-width: 655px){
+@media (min-width: 1280px){
 
   .home{
-    background-image: url('/src/resources/images/home/background-home-mobile.jpg');
+    height: 100vh;
+    background-image: url('/src/resources/images/home/background-home-desktop.jpg');
   }
 }
 
@@ -1853,6 +1863,14 @@ header hr {
     width: 100%;
     justify-content: center;
   }
+}
+
+.home-section-two{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  --tw-bg-opacity: 1;
+  background-color: rgb(147 197 253 / var(--tw-bg-opacity));
 }
 
 .explore{
@@ -2884,10 +2902,6 @@ footer{
     background-image: url('/src/resources/images/destination/background-destination-tablet.jpg');
   }
 
-  .max-\[768px\]\:bg-tabletHomeBg{
-    background-image: url('/src/resources/images/home/background-home-tablet.jpg');
-  }
-
   .max-\[768px\]\:bg-tabletTechnologyBg{
     background-image: url('/src/resources/images/technology/background-technology-tablet.jpg');
   }
@@ -3079,11 +3093,23 @@ footer{
     margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(2rem * var(--tw-space-y-reverse));
   }
+
+  .lg\:bg-tabletHomeBg{
+    background-image: url('/src/resources/images/home/background-home-tablet.jpg');
+  }
 }
 
 @media (min-width: 1280px){
 
+  .xl\:h-screen{
+    height: 100vh;
+  }
+
   .xl\:justify-between{
     justify-content: space-between;
+  }
+
+  .xl\:bg-desktopHomeBg{
+    background-image: url('/src/resources/images/home/background-home-desktop.jpg');
   }
 }

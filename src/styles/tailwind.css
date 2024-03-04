@@ -20,7 +20,7 @@ main {
 }
 
 .home {
-  @apply grid grid-cols-12 h-full grid-rows-[200px,800px] bg-desktopHomeBg bg-no-repeat bg-[100%] bg-cover w-full max-[768px]:bg-tabletHomeBg max-[655px]:bg-mobileHomeBg;
+  @apply grid grid-cols-12 h-full  xl:h-screen grid-rows-[200px,1fr] xl:bg-desktopHomeBg bg-no-repeat bg-[100%] bg-cover w-full lg:bg-tabletHomeBg sm:bg-mobileHomeBg;
 }
 
 header {
@@ -106,6 +106,10 @@ header hr {
 
 .explore-bg {
   @apply max-[768px]:w-full max-[768px]:flex max-[768px]:justify-center;
+}
+
+.home-section-two{
+  @apply flex justify-center items-center bg-blue-300
 }
 
 .explore {
