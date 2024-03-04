@@ -862,9 +862,6 @@ video {
 .grid-rows-5{
   grid-template-rows: repeat(5, minmax(0, 1fr));
 }
-.grid-rows-\[200px\2c 1fr\]{
-  grid-template-rows: 200px 1fr;
-}
 .flex-row{
   flex-direction: row;
 }
@@ -1499,10 +1496,8 @@ main{
 
 .home{
   display: grid;
-  height: 100%;
   width: 100%;
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  grid-template-rows: 200px 1fr;
   background-size: cover;
   background-position: 100%;
   background-repeat: no-repeat;
@@ -1511,6 +1506,14 @@ main{
 @media (min-width: 640px){
 
   .home{
+    height: 100vh;
+  }
+}
+
+@media (min-width: 768px){
+
+  .home{
+    height: 100%;
     background-image: url('/src/resources/images/home/background-home-mobile.jpg');
   }
 }
@@ -1518,6 +1521,7 @@ main{
 @media (min-width: 1024px){
 
   .home{
+    height: 100%;
     background-image: url('/src/resources/images/home/background-home-tablet.jpg');
   }
 }
@@ -1526,6 +1530,7 @@ main{
 
   .home{
     height: 100vh;
+    grid-template-rows: 200px 1fr;
     background-image: url('/src/resources/images/home/background-home-desktop.jpg');
   }
 }
@@ -3002,6 +3007,17 @@ footer{
   }
 }
 
+@media (min-width: 768px){
+
+  .md\:h-full{
+    height: 100%;
+  }
+
+  .md\:bg-mobileHomeBg{
+    background-image: url('/src/resources/images/home/background-home-mobile.jpg');
+  }
+}
+
 @media (min-width: 769px){
 
   .min-\[769px\]\:ml-32{
@@ -3088,6 +3104,10 @@ footer{
 
 @media (min-width: 1024px){
 
+  .lg\:h-full{
+    height: 100%;
+  }
+
   .lg\:space-y-8 > :not([hidden]) ~ :not([hidden]){
     --tw-space-y-reverse: 0;
     margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
@@ -3103,6 +3123,10 @@ footer{
 
   .xl\:h-screen{
     height: 100vh;
+  }
+
+  .xl\:grid-rows-\[200px\2c 1fr\]{
+    grid-template-rows: 200px 1fr;
   }
 
   .xl\:justify-between{
