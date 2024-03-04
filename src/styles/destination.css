@@ -862,6 +862,9 @@ video {
 .grid-rows-5{
   grid-template-rows: repeat(5, minmax(0, 1fr));
 }
+.grid-rows-\[200px\2c 1fr\]{
+  grid-template-rows: 200px 1fr;
+}
 .flex-row{
   flex-direction: row;
 }
@@ -1498,16 +1501,10 @@ main{
   display: grid;
   width: 100%;
   grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: 200px 1fr;
   background-size: cover;
   background-position: 100%;
   background-repeat: no-repeat;
-}
-
-@media (min-width: 640px){
-
-  .home{
-    height: 100vh;
-  }
 }
 
 @media (min-width: 768px){
@@ -1521,7 +1518,7 @@ main{
 @media (min-width: 1024px){
 
   .home{
-    height: 100%;
+    height: auto;
     background-image: url('/src/resources/images/home/background-home-tablet.jpg');
   }
 }
@@ -1530,7 +1527,6 @@ main{
 
   .home{
     height: 100vh;
-    grid-template-rows: 200px 1fr;
     background-image: url('/src/resources/images/home/background-home-desktop.jpg');
   }
 }
@@ -3012,10 +3008,6 @@ footer{
   .md\:h-full{
     height: 100%;
   }
-
-  .md\:bg-mobileHomeBg{
-    background-image: url('/src/resources/images/home/background-home-mobile.jpg');
-  }
 }
 
 @media (min-width: 769px){
@@ -3104,8 +3096,8 @@ footer{
 
 @media (min-width: 1024px){
 
-  .lg\:h-full{
-    height: 100%;
+  .lg\:h-auto{
+    height: auto;
   }
 
   .lg\:space-y-8 > :not([hidden]) ~ :not([hidden]){
@@ -3123,10 +3115,6 @@ footer{
 
   .xl\:h-screen{
     height: 100vh;
-  }
-
-  .xl\:grid-rows-\[200px\2c 1fr\]{
-    grid-template-rows: 200px 1fr;
   }
 
   .xl\:justify-between{
