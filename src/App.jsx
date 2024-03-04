@@ -12,7 +12,7 @@ import {
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={<Main />}>
+      <Route path="/" >
         <Route index element={<Home/>} />
         <Route path="destination" element={<PlanetParent/>} >
         <Route path="" element={<PlanetSubComponent/>} >
