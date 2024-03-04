@@ -856,6 +856,9 @@ video {
 .grid-rows-3{
   grid-template-rows: repeat(3, minmax(0, 1fr));
 }
+.grid-rows-4{
+  grid-template-rows: repeat(4, minmax(0, 1fr));
+}
 .grid-rows-5{
   grid-template-rows: repeat(5, minmax(0, 1fr));
 }
@@ -1478,9 +1481,8 @@ main{
 
 .home{
   display: grid;
-  height: 100vh;
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  grid-template-rows: repeat(5, minmax(0, 1fr));
+  grid-template-rows: repeat(4, minmax(0, 1fr));
   background-image: url('/src/resources/images/home/background-home-desktop.jpg');
   background-size: cover;
   background-position: 100%;
@@ -1500,6 +1502,30 @@ main{
 
   .home{
     background-image: url('/src/resources/images/home/background-home-mobile.jpg');
+  }
+}
+
+
+@media (min-width: 768px){
+
+  .home{
+    height: 100%;
+  }
+}
+
+
+@media (min-width: 1024px){
+
+  .home{
+    height: 100%;
+  }
+}
+
+
+@media (min-width: 1280px){
+
+  .home{
+    height: 100vh;
   }
 }
 
@@ -1564,6 +1590,10 @@ header{
   padding-left: 1rem;
   flex-grow: 1;
 }
+/* .main-nav {
+  @apply h-full bg-stroke/30 backdrop-blur-md flex items-center pl-12 min-[769px]:flex-grow-[3] max-[768px]:pr-12 max-[655px]:hidden;
+} */
+
 .main-nav{
   display: flex;
   height: 100%;
@@ -1574,18 +1604,21 @@ header{
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
+
 @media (max-width: 768px){
 
   .main-nav{
     padding-right: 3rem;
   }
 }
+
 @media (max-width: 655px){
 
   .main-nav{
     display: none;
   }
 }
+
 @media (min-width: 769px){
 
   .main-nav{
@@ -1640,7 +1673,7 @@ a.active{
 } */
 .section-two{
   grid-column: span 12 / span 12;
-  grid-row: span 4 / span 4;
+  grid-row: span 3 / span 3;
   display: flex;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -1659,7 +1692,6 @@ a.active{
 
   .section-two{
     flex-direction: row;
-    align-items: center;
   }
 }
 
@@ -2965,6 +2997,13 @@ footer{
   }
 }
 
+@media (min-width: 768px){
+
+  .md\:h-full{
+    height: 100%;
+  }
+}
+
 @media (min-width: 769px){
 
   .min-\[769px\]\:ml-32{
@@ -3046,5 +3085,12 @@ footer{
 
   .min-\[976px\]\:w-\[29\%\]{
     width: 29%;
+  }
+}
+
+@media (min-width: 1024px){
+
+  .lg\:h-full{
+    height: 100%;
   }
 }
