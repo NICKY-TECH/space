@@ -77,7 +77,7 @@ a.active {
   @apply row-span-10 col-span-12 text-white flex  max-[768px]:justify-between px-6  max-[768px]:flex-col  min-[769px]:flex-row  min-[769px]:items-center max-[768px]:gap-6;
 } */
 .section-two {
-  @apply row-span-3 col-span-12 text-white flex  max-[768px]:justify-between px-6  max-[768px]:flex-col  min-[769px]:flex-row  items-center max-[768px]:gap-6;
+  @apply row-span-3 col-span-12 text-white flex  max-[768px]:justify-between px-6  max-[768px]:flex-col  min-[769px]:flex-row  max-[768px]:gap-6;
 }
 
 
