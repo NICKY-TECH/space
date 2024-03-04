@@ -1513,8 +1513,6 @@ main{
 header{
   grid-column: span 12 / span 12;
   grid-row: span 1 / span 1;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
   display: flex;
   width: 100%;
   padding-left: 1rem;
@@ -1580,13 +1578,6 @@ header{
   --tw-backdrop-blur: blur(12px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-}
-
-@media (max-width: 768px){
-
-  .main-nav{
-    padding-right: 3rem;
-  }
 }
 
 @media (max-width: 655px){

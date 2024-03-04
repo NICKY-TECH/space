@@ -54,7 +54,7 @@ header {
 } */
 
 .main-nav {
-  @apply h-full bg-stroke/30 backdrop-blur-md flex items-center pl-12 min-[769px]:flex-grow-[3] max-[768px]:pr-12 max-[655px]:hidden;
+  @apply h-full bg-stroke/30 backdrop-blur-md flex items-center pl-12 min-[769px]:flex-grow-[3] max-[655px]:hidden;
 }
 
 .number-nav {
