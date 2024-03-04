@@ -121,7 +121,7 @@ header hr {
 }
 
 .planet {
-  @apply grid grid-cols-12 h-screen grid-rows-12 bg-desktopDestinationBg bg-no-repeat bg-[100%] bg-cover w-full max-[768px]:bg-tabletDestinationBg max-[665px]:bg-mobileDestinationBg;
+  @apply grid grid-cols-12 h-max grid-rows-[160px,1fr] bg-desktopDestinationBg bg-no-repeat bg-[100%] bg-cover w-full max-[768px]:bg-tabletDestinationBg max-[665px]:bg-mobileDestinationBg;
 }
 
 .crew {
@@ -159,7 +159,7 @@ header hr {
 }
 
 .planet-details-adjustment {
-  @apply grid grid-cols-12 grid-rows-12 row-span-10 col-span-12 pl-14 space-y-16 max-[768px]:pr-14 ;
+  @apply grid grid-cols-12 grid-rows-12 row-span-1 col-span-12 pl-14 space-y-16 max-[768px]:pr-14 ;
 }
 
 .crew-details-adjustment{

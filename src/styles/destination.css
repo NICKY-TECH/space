@@ -2009,10 +2009,11 @@ header hr {
 
 .planet{
   display: grid;
-  height: 100vh;
+  height: -moz-max-content;
+  height: max-content;
   width: 100%;
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  grid-template-rows: repeat(12, minmax(0, 1fr));
+  grid-template-rows: 160px 1fr;
   background-image: url('/src/resources/images/destination/background-destination-desktop.jpg');
   background-size: cover;
   background-position: 100%;
@@ -2144,7 +2145,7 @@ header hr {
 
 .planet-details-adjustment{
   grid-column: span 12 / span 12;
-  grid-row: span 10 / span 10;
+  grid-row: span 1 / span 1;
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   grid-template-rows: repeat(12, minmax(0, 1fr));
