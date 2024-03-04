@@ -1099,6 +1099,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(134 239 172 / var(--tw-bg-opacity));
 }
+.bg-green-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
+}
 .bg-orange-200{
   --tw-bg-opacity: 1;
   background-color: rgb(254 215 170 / var(--tw-bg-opacity));
@@ -2014,7 +2018,8 @@ header hr {
 
 .planet{
   display: grid;
-  height: 100vh;
+  max-height: 100%;
+  min-height: 100vh;
   width: 100%;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   grid-template-rows: 160px 1fr;
@@ -2027,8 +2032,6 @@ header hr {
 @media (max-width: 768px){
 
   .planet{
-    height: -moz-max-content;
-    height: max-content;
     background-image: url('/src/resources/images/destination/background-destination-tablet.jpg');
   }
 }
@@ -2042,9 +2045,10 @@ header hr {
 
 .crew{
   display: grid;
-  height: 100vh;
+  max-height: 100%;
+  min-height: 100vh;
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  grid-template-rows: repeat(12, minmax(0, 1fr));
+  grid-template-rows: 160px 1fr;
   background-image: url('/src/resources/images/crew/background-crew-desktop.jpg');
   background-size: cover;
   background-position: 100%;
@@ -2176,7 +2180,7 @@ header hr {
 
 .crew-details-adjustment{
   grid-column: span 12 / span 12;
-  grid-row: span 10 / span 10;
+  grid-row: span 1 / span 1;
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   grid-template-rows: repeat(12, minmax(0, 1fr));
@@ -2920,11 +2924,6 @@ footer{
 
   .max-\[768px\]\:h-auto{
     height: auto;
-  }
-
-  .max-\[768px\]\:h-max{
-    height: -moz-max-content;
-    height: max-content;
   }
 
   .max-\[768px\]\:w-\[100\%\]{

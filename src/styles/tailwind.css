@@ -121,11 +121,11 @@ header hr {
 }
 
 .planet {
-  @apply grid grid-cols-12 max-[768px]:h-max h-screen grid-rows-[160px,1fr] bg-desktopDestinationBg bg-no-repeat bg-[100%] bg-cover w-full max-[768px]:bg-tabletDestinationBg max-[665px]:bg-mobileDestinationBg;
+  @apply grid grid-cols-12  grid-rows-[160px,1fr] max-h-full min-h-screen bg-desktopDestinationBg bg-no-repeat bg-[100%] bg-cover w-full max-[768px]:bg-tabletDestinationBg max-[665px]:bg-mobileDestinationBg;
 }
 
 .crew {
-  @apply  grid grid-cols-12 grid-rows-12 bg-desktopCrewBg bg-no-repeat bg-[100%] bg-cover max-[768px]:bg-tabletCrewBg max-[665px]:bg-mobileCrewBg  h-screen;
+  @apply  grid grid-cols-12 grid-rows-[160px,1fr] bg-desktopCrewBg bg-no-repeat bg-[100%] bg-cover max-[768px]:bg-tabletCrewBg max-[665px]:bg-mobileCrewBg max-h-full min-h-screen;
 }
 
 /* .crew-image-douglas{
@@ -163,7 +163,7 @@ header hr {
 }
 
 .crew-details-adjustment{
-  @apply grid grid-cols-12 grid-rows-12 row-span-10 col-span-12 pl-14 max-[768px]:pr-14;
+  @apply grid grid-cols-12 grid-rows-12 row-span-1 col-span-12 pl-14 max-[768px]:pr-14;
 }
 
 
