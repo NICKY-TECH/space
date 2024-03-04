@@ -574,6 +574,10 @@ video {
 .m-0{
   margin: 0px;
 }
+.my-1{
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
 .my-3{
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
@@ -1538,8 +1542,8 @@ html{
 header{
   grid-column: span 12 / span 12;
   grid-row: span 1 / span 1;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
   display: flex;
   width: 100%;
   padding-left: 1rem;
@@ -1565,6 +1569,14 @@ header{
     --tw-space-x-reverse: 0;
     margin-right: calc(1rem * var(--tw-space-x-reverse));
     margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+}
+
+@media (min-width: 1280px){
+
+  header{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -3147,6 +3159,11 @@ footer{
 }
 
 @media (min-width: 1280px){
+
+  .xl\:my-4{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 
   .xl\:w-\[45\%\]{
     width: 45%;
