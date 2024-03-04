@@ -1481,6 +1481,7 @@ main{
 
 .home{
   display: grid;
+  height: 100vh;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   grid-template-rows: repeat(4, minmax(0, 1fr));
   background-image: url('/src/resources/images/home/background-home-desktop.jpg');
@@ -1502,30 +1503,6 @@ main{
 
   .home{
     background-image: url('/src/resources/images/home/background-home-mobile.jpg');
-  }
-}
-
-
-@media (min-width: 768px){
-
-  .home{
-    height: 100%;
-  }
-}
-
-
-@media (min-width: 1024px){
-
-  .home{
-    height: 100%;
-  }
-}
-
-
-@media (min-width: 1280px){
-
-  .home{
-    height: 100vh;
   }
 }
 
@@ -2997,13 +2974,6 @@ footer{
   }
 }
 
-@media (min-width: 768px){
-
-  .md\:h-full{
-    height: 100%;
-  }
-}
-
 @media (min-width: 769px){
 
   .min-\[769px\]\:ml-32{
@@ -3085,12 +3055,5 @@ footer{
 
   .min-\[976px\]\:w-\[29\%\]{
     width: 29%;
-  }
-}
-
-@media (min-width: 1024px){
-
-  .lg\:h-full{
-    height: 100%;
   }
 }
