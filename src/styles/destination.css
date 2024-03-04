@@ -862,8 +862,8 @@ video {
 .grid-rows-5{
   grid-template-rows: repeat(5, minmax(0, 1fr));
 }
-.grid-rows-\[200px\2c 600px\]{
-  grid-template-rows: 200px 600px;
+.grid-rows-\[200px\2c 800px\]{
+  grid-template-rows: 200px 800px;
 }
 .flex-row{
   flex-direction: row;
@@ -873,6 +873,9 @@ video {
 }
 .content-center{
   align-content: center;
+}
+.items-start{
+  align-items: flex-start;
 }
 .items-end{
   align-items: flex-end;
@@ -1496,7 +1499,7 @@ main{
   height: 100%;
   width: 100%;
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  grid-template-rows: 200px 600px;
+  grid-template-rows: 200px 800px;
   background-image: url('/src/resources/images/home/background-home-desktop.jpg');
   background-size: cover;
   background-position: 100%;
@@ -1667,7 +1670,7 @@ a.active{
 
   .section-two{
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
   }
 }
 
@@ -2951,6 +2954,10 @@ footer{
     display: none;
   }
 
+  .max-\[655px\]\:pr-4{
+    padding-right: 1rem;
+  }
+
   .max-\[655px\]\:text-\[25px\]{
     font-size: 25px;
   }
@@ -3015,12 +3022,12 @@ footer{
     flex-direction: row;
   }
 
-  .min-\[769px\]\:items-end{
-    align-items: flex-end;
+  .min-\[769px\]\:items-start{
+    align-items: flex-start;
   }
 
-  .min-\[769px\]\:items-center{
-    align-items: center;
+  .min-\[769px\]\:items-end{
+    align-items: flex-end;
   }
 
   .min-\[769px\]\:justify-end{
