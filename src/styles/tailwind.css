@@ -20,7 +20,7 @@ main {
 }
 
 .home {
-  @apply grid grid-cols-12 h-screen grid-rows-[200px,1fr] bg-desktopHomeBg bg-no-repeat bg-[100%] bg-cover w-full max-[768px]:bg-tabletHomeBg max-[655px]:bg-mobileHomeBg;
+  @apply grid grid-cols-12 h-screen grid-rows-[200px,600px] bg-desktopHomeBg bg-no-repeat bg-[100%] bg-cover w-full max-[768px]:bg-tabletHomeBg max-[655px]:bg-mobileHomeBg;
 }
 
 header {
