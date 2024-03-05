@@ -1,5 +1,5 @@
 import "/src/styles/destination.css"
-import {Main,Home,PlanetParent,PlanetSubComponent,EuropaDetails,MoonDetails,MarsDetails,TitanDetails,Crew,Technology} from "/src/index";
+import {Main,Home,PlanetParent,PlanetSubComponent,Crew,Technology,PlanetDetails} from "/src/index";
 import {
   RouterProvider,
   createBrowserRouter,
@@ -16,10 +16,10 @@ function App() {
         <Route index element={<Home/>} />
         <Route path="destination" element={<PlanetParent/>} >
         <Route path="" element={<PlanetSubComponent/>} >
-        <Route path="europa" element={<EuropaDetails/>} />
- <Route path="" element={<MoonDetails/>} />
-        <Route path="mars" element={<MarsDetails/>} />
-        <Route path="titan" element={<TitanDetails/>} />
+        <Route path="europa" element={<PlanetDetails/>} />
+ <Route path="" element={<PlanetDetails/>} />
+        <Route path="mars" element={<PlanetDetails/>} />
+        <Route path="titan" element={<PlanetDetails/>} />
 
         </Route>
         </Route>

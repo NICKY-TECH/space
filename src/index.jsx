@@ -1,27 +1,45 @@
-import MainHeading from "./components/MainHeading";
-import SubHeading from "./components/SubHeading";
-import Text from "./components/Text.";
-import NavItem from "./components/NavItem";
-import Navigation from "./components/Navigation";
+import MainHeading from "./components/Global/MainHeading";
+import SubHeading from "./components/Global/SubHeading";
+import Text from "./components/Global/Text.";
+import NavItem from "./components/Global/NavItem";
+import Navigation from "./components/Global/Navigation";
 import Home from "./pages/Home";
 import Main from "./pages/Main";
-import Header from "./components/Header";
-import PageImage from "./components/PageImage";
-import PlanetFooterDetails from "./components/PlanetFooterDetails ";
+import Header from "./components/Global/Header";
+import PageImage from "./components/Global/PageImage";
+import PlanetFooterDetails from "./components/Planet/PlanetFooterDetails ";
 import PlanetParent from "./pages/PlanetParent";
-import PlanetSubComponent from "./components/PlanetSubComponent";
-import Planet from "./components/Planet";
-import MoonDetails from "./components/MoonDetails";
-import MarsDetails from "./components/MarsDetails";
-import EuropaDetails from "./components/EuropaDetails";
-import TitanDetails from "./components/TitanDetails";
+import PlanetSubComponent from "./components/Planet/PlanetSubComponent";
+import Planet from "./components/Global/Planet";
 import Crew from "./pages/Crew";
-import PageLabel from "./components/PageLabel";
-import CrewSectionOne from "./components/CrewSectionOne";
-import SlideButton from "./components/SlideButton";
-import TechnologySlide from "./components/TechnologySlide";
+import PageLabel from "./components/Global/PageLabel";
+import CrewSectionOne from "./components/Global/CrewSectionOne";
+import SlideButton from "./components/Technology/SlideButton";
+import TechnologySlide from "./components/Technology/TechnologySlide";
 import Technology from "./pages/Technology";
-import OverLay from "./components/OverLay";
+import OverLay from "./components/Global/OverLay";
+import PlanetDetails from "./components/Planet/PlanetDetails";
 
-
-export { MainHeading, SubHeading, Text, NavItem, Navigation,Home,Main,Header,PageImage,PlanetFooterDetails,PlanetParent,PlanetSubComponent,Planet,MoonDetails,MarsDetails,EuropaDetails,TitanDetails,Crew,PageLabel,SlideButton,CrewSectionOne,Technology,TechnologySlide,OverLay};
+export {
+  MainHeading,
+  SubHeading,
+  Text,
+  NavItem,
+  Navigation,
+  Home,
+  Main,
+  Header,
+  PageImage,
+  PlanetFooterDetails,
+  PlanetParent,
+  PlanetSubComponent,
+  Planet,
+  Crew,
+  PageLabel,
+  SlideButton,
+  CrewSectionOne,
+  Technology,
+  TechnologySlide,
+  OverLay,
+  PlanetDetails,
+};

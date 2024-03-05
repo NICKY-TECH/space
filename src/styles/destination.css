@@ -981,6 +981,11 @@ video {
 .gap-9{
   gap: 2.25rem;
 }
+.space-x-0 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0px * var(--tw-space-x-reverse));
+  margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
+}
 .space-x-1 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(0.25rem * var(--tw-space-x-reverse));
@@ -1621,7 +1626,7 @@ aside{
   flex-direction: column;
   background-color: rgb(151 151 151 / 0.3);
   padding-right: 2rem;
-  padding-left: 1rem;
+  padding-left: 1.25rem;
   font-family: Barlow Condensed;
   --tw-backdrop-blur: blur(40px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -1652,13 +1657,20 @@ aside nav ul{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
+}
+
+aside nav ul > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0px * var(--tw-space-x-reverse));
+  margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
 }
 
 aside nav ul:hover{
   border-bottom-width: 0px;
 }
-
 
 aside nav ul li a.active:hover{
   border-bottom-width: 0px;
@@ -2429,22 +2441,22 @@ header hr {
 
 
 
+/* .planet-two {
+  @apply row-span-1 col-span-12  flex max-[768px]:justify-center text-dilute text-base lg:text-lg xl:text-[28px] font-BarlowCondensed font-extralight tracking-wider space-x-3 items-center;
+  word-spacing: 5px;
+} */
+
 .planet-two{
   grid-column: span 12 / span 12;
   grid-row: span 1 / span 1;
   display: flex;
-  align-items: center;
 }
-
-
 
 .planet-two > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(0.75rem * var(--tw-space-x-reverse));
   margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
-
-
 
 .planet-two{
   font-family: Barlow Condensed;
@@ -2456,16 +2468,12 @@ header hr {
   color: rgb(208 214 249 / var(--tw-text-opacity));
 }
 
-
-
 @media (max-width: 768px){
 
   .planet-two{
     justify-content: center;
   }
 }
-
-
 
 @media (min-width: 1024px){
 
@@ -2475,16 +2483,12 @@ header hr {
   }
 }
 
-
-
 @media (min-width: 1280px){
 
   .planet-two{
     font-size: 28px;
   }
 }
-
-
 
 .planet-two {
   word-spacing: 5px;

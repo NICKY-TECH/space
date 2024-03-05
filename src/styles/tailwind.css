@@ -16,7 +16,7 @@ html {
 }
 
 aside{
-  @apply bg-stroke/30 backdrop-blur-2xl fixed top-0 z-20 right-0 w-[65%] min-[656px]:hidden max-[655px]:flex pr-8  pl-4 flex-col font-BarlowCondensed max-h-full min-h-screen;
+  @apply bg-stroke/30 backdrop-blur-2xl fixed top-0 z-20 right-0 w-[65%] min-[656px]:hidden max-[655px]:flex pr-8  pl-5 flex-col font-BarlowCondensed max-h-full min-h-screen;
 }
 
 .close{
@@ -24,7 +24,7 @@ aside{
 }
 
 aside nav ul{
-  @apply flex flex-col items-start justify-start hover:border-b-0
+  @apply flex flex-col hover:border-b-0 space-y-8 items-start space-x-0
 }
 
 aside nav ul li a.active{
@@ -228,8 +228,13 @@ header hr {
 
 
 
-.planet-two {
+/* .planet-two {
   @apply row-span-1 col-span-12  flex max-[768px]:justify-center text-dilute text-base lg:text-lg xl:text-[28px] font-BarlowCondensed font-extralight tracking-wider space-x-3 items-center;
+  word-spacing: 5px;
+} */
+
+.planet-two {
+  @apply row-span-1 col-span-12  flex max-[768px]:justify-center text-dilute text-base lg:text-lg xl:text-[28px] font-BarlowCondensed font-extralight tracking-wider space-x-3;
   word-spacing: 5px;
 }
 

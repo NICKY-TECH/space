@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 export const selectCrewSlice = createSlice({
   name: "selectCrew",
-  initialState: { value: 0 },
+  initialState: { value: 1 },
   reducers: {
     selectCrewState: (state,action) => {
       return {
