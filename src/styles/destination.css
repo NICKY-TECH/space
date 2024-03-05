@@ -2228,6 +2228,13 @@ header hr {
   padding-left: 1rem;
 }
 
+@media (max-width: 1034px){
+
+  .crew-details-adjustment{
+    height: 40%;
+  }
+}
+
 @media (max-width: 768px){
 
   .crew-details-adjustment{
@@ -2925,6 +2932,13 @@ footer{
   border-style: solid;
 }
 
+@media (max-width: 1034px){
+
+  .max-\[1034px\]\:h-\[40\%\]{
+    height: 40%;
+  }
+}
+
 @media (max-width: 768px){
 
   .max-\[768px\]\:order-1{
@@ -3085,6 +3099,10 @@ footer{
 
   .max-\[768px\]\:pr-14{
     padding-right: 3.5rem;
+  }
+
+  .max-\[768px\]\:pr-4{
+    padding-right: 1rem;
   }
 
   .max-\[768px\]\:text-center{

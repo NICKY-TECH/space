@@ -163,7 +163,7 @@ header hr {
 }
 
 .crew-details-adjustment{
-  @apply grid grid-cols-12 grid-rows-[150px,1fr] row-span-1 col-span-12 pl-4 max-[768px]:pr-4;
+  @apply grid grid-cols-12 grid-rows-[150px,1fr] row-span-1 col-span-12 pl-4 max-[768px]:pr-4 max-[1034px]:h-[40%];
 }
 
 
