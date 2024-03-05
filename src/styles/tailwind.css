@@ -15,8 +15,28 @@ html {
   @apply w-full h-full font-Bellefair;
 }
 
+aside{
+  @apply bg-stroke/30 backdrop-blur-2xl fixed top-0 z-20 right-0 w-[65%] min-[656px]:hidden max-[655px]:flex pr-8  pl-4 flex-col font-BarlowCondensed max-h-full min-h-screen;
+}
+
+.close{
+  @apply flex justify-end mt-8
+}
+
+aside nav ul{
+  @apply flex flex-col items-start justify-start hover:border-b-0
+}
+
+aside nav ul li a.active{
+  @apply hover:border-b-0
+}
+
+.main-wrapper{
+  @apply max-h-full min-h-screen
+}
+
 .home {
-  @apply grid grid-cols-12 h-screen grid-rows-[160px,1fr] bg-mobileHomeBg lg:bg-tabletHomeBg xl:bg-desktopHomeBg bg-no-repeat bg-[100%] bg-cover w-full;
+  @apply grid grid-cols-12 max-h-full min-h-screen grid-rows-[160px,1fr] bg-mobileHomeBg lg:bg-tabletHomeBg xl:bg-desktopHomeBg bg-no-repeat bg-[100%] bg-cover w-full;
 }
 
 header {
@@ -26,6 +46,10 @@ header {
 .ham-menu {
   @apply max-[655px]:flex min-[656px]:hidden  hover:cursor-pointer;
 }
+
+/* .close{
+  @apply min-[656px]:hidden max-[655px]:flex
+} */
 
 .logo {
   @apply flex items-center pl-4;
@@ -47,7 +71,7 @@ nav ul li {
   @apply h-full content-center text-center flex items-end;
 }
 
-a {
+.planet nav ul li a,.technology nav ul a,.crew nav ul li a,.home nav ul li a {
   @apply hover:border-solid hover:border-b-2 hover:cursor-pointer flex py-10;
 }
 

@@ -1,12 +1,15 @@
 import "/src/styles/destination.css"
-import { Outlet } from "react-router-dom"
+import { Outlet } from "react-router-dom";
+import {OverLay} from "/src/index"
+
 
 
 
 function Main (){
-    return <main>
+    return <div className="main-wrapper">
+    <OverLay/>
 <Outlet/>
-    </main>
+    </div>
 }
 
 export default Main

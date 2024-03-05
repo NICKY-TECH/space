@@ -21,6 +21,7 @@ import CrewSectionOne from "./components/CrewSectionOne";
 import SlideButton from "./components/SlideButton";
 import TechnologySlide from "./components/TechnologySlide";
 import Technology from "./pages/Technology";
+import OverLay from "./components/OverLay";
 
 
-export { MainHeading, SubHeading, Text, NavItem, Navigation,Home,Main,Header,PageImage,PlanetFooterDetails,PlanetParent,PlanetSubComponent,Planet,MoonDetails,MarsDetails,EuropaDetails,TitanDetails,Crew,PageLabel,SlideButton,CrewSectionOne,Technology,TechnologySlide};
+export { MainHeading, SubHeading, Text, NavItem, Navigation,Home,Main,Header,PageImage,PlanetFooterDetails,PlanetParent,PlanetSubComponent,Planet,MoonDetails,MarsDetails,EuropaDetails,TitanDetails,Crew,PageLabel,SlideButton,CrewSectionOne,Technology,TechnologySlide,OverLay};
