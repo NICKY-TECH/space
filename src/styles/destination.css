@@ -659,6 +659,9 @@ video {
 .mt-4{
   margin-top: 1rem;
 }
+.mt-6{
+  margin-top: 1.5rem;
+}
 .mt-8{
   margin-top: 2rem;
 }
@@ -1704,6 +1707,8 @@ aside nav ul li a.active:hover{
 @media (min-width: 1280px){
 
   .home{
+    height: -moz-max-content;
+    height: max-content;
     background-image: url('/src/resources/images/home/background-home-desktop.jpg');
   }
 }

@@ -36,7 +36,7 @@ aside nav ul li a.active{
 }
 
 .home {
-  @apply grid grid-cols-12 max-h-full min-h-screen grid-rows-[160px,1fr] bg-mobileHomeBg lg:bg-tabletHomeBg xl:bg-desktopHomeBg bg-no-repeat bg-[100%] bg-cover w-full;
+  @apply grid grid-cols-12 max-h-full min-h-screen grid-rows-[160px,1fr] bg-mobileHomeBg lg:bg-tabletHomeBg xl:bg-desktopHomeBg bg-no-repeat bg-[100%] bg-cover w-full xl:h-max;
 }
 
 header {
