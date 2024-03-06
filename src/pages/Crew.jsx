@@ -6,22 +6,25 @@ import mark from "/src/resources/images/crew/image-mark-shuttleworth.png";
 import victor from "/src/resources/images/crew/image-victor-glover.png";
 import ansari from "/src/resources/images/crew/image-anousheh-ansari.png";
 import { motion,AnimatePresence } from "framer-motion";
+import  { useEffect, useState } from "react";
 
 function Crew() {
   const selectedCrew = useSelector((state) => state.selectCrew.value);
+  const [key, setKey] = useState(0);
+
+  useEffect(() => {
+    setKey(selectedCrew);
+  }, [selectedCrew]);
   const imageAnimation={
     initial:{
-      x:200,
       opacity:0
 
     },
     animate:{
-      x:0,
-      opacity:1
-    },
-    exit:{
-      x:-200,
-      opacity:0
+      opacity:1,
+      transiton:{
+       duration:2
+      }
     }
   }
   return (
@@ -77,19 +80,12 @@ function Crew() {
             </div>
           </div>
           <div className="crew-image">
+          <div className="specific-crew-image will-change-overflow-y-hidden">
           <AnimatePresence initial={false}>
-          <motion.div className="specific-crew-image" variants={imageAnimation} initial="initial" animate="animate" exit="exit">
-              {selectedCrew === 0 ? (
-                <img src={douglas} />
-              ) : selectedCrew === 1 ? (
-                <img src={mark} />
-              ) : selectedCrew === 2 ? (
-                <img src={victor} />
-              ) : (
-                <img src={ansari} />
-              )}
-            </motion.div>
-          </AnimatePresence>
+                <motion.img src={selectedCrew==0?douglas:selectedCrew==1?mark:selectedCrew==2?victor:ansari} variants={imageAnimation} initial={{ opacity:0 }} animate={{ opacity:1 }} key={key} transition={{ duration:4 }} />
+                </AnimatePresence>
+            </div>
+      
           </div>
         </div>
       </div>

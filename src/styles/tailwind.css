@@ -12,7 +12,7 @@
 
 body,
 html {
-  @apply w-full h-full font-Bellefair;
+  @apply w-full h-full font-Bellefair bg-[#0B0D17];
 }
 
 aside{
@@ -102,7 +102,7 @@ header hr {
 }
 
 .planet-main-title {
-  @apply text-[90px] text-white flex max-[768px]:text-center;
+  @apply text-[90px] text-white flex max-[768px]:text-center opacity-0;
 }
 
 /* .planet-main-title p{
@@ -268,12 +268,9 @@ header hr {
 .planet-nav ul li {
   @apply text-dilute;
 }
-
-/* .moon{
-flex-grow: 2;
-background-color: beige;
-} */
-
+.moon{
+  @apply relative
+}
 .moon-details {
   @apply max-[768px]:flex max-[768px]:items-center max-[768px]:flex-col;
 }

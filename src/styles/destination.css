@@ -1105,6 +1105,10 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(151 151 151 / var(--tw-border-opacity));
 }
+.bg-\[\#0B0D17\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(11 13 23 / var(--tw-bg-opacity));
+}
 .bg-black{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -1152,6 +1156,10 @@ video {
 .bg-green-400{
   --tw-bg-opacity: 1;
   background-color: rgb(74 222 128 / var(--tw-bg-opacity));
+}
+.bg-green-900{
+  --tw-bg-opacity: 1;
+  background-color: rgb(20 83 45 / var(--tw-bg-opacity));
 }
 .bg-orange-200{
   --tw-bg-opacity: 1;
@@ -1615,6 +1623,8 @@ body,
 html{
   height: 100%;
   width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(11 13 23 / var(--tw-bg-opacity));
   font-family: Bellefair;
 }
 
@@ -2031,6 +2041,7 @@ header hr {
   font-size: 90px;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+  opacity: 0;
 }
 
 @media (max-width: 768px){
@@ -2586,12 +2597,9 @@ header hr {
   --tw-text-opacity: 1;
   color: rgb(208 214 249 / var(--tw-text-opacity));
 }
-
-/* .moon{
-flex-grow: 2;
-background-color: beige;
-} */
-
+.moon{
+  position: relative;
+}
 @media (max-width: 768px){
 
   .moon-details{
