@@ -9,13 +9,11 @@ function Text ({text,style}){
       setKey((prevKey) => prevKey + 1);
     }, [text]);
     return<div className={style}>
-    {
-        style=="text-container-planet"?<motion.p   key={key}  animate={{ x:0 }} initial={{x:-150 }} transition={{ duration:2, type:"spring" }}>
+ <motion.p   key={key}  animate={{ x:0 }} initial={{x:-150 }} transition={{ duration:2, type:"spring" }}>
             {text}
-         </motion.p>:  <p>
-            {text}
-         </p>
-    }
+         </motion.p>
+       
+ 
        
     </div>
 }

@@ -3,7 +3,7 @@ import {NavItem} from "/src/index";
 
 function Navigation({ list,style,isSub }) {
   return (
-     <nav className={style}>
+     <nav className={style?style:""}>
       <ul>
         {
           list.map((item,index) => {

@@ -748,9 +748,6 @@ video {
 .w-\[50px\]{
   width: 50px;
 }
-.w-\[65\%\]{
-  width: 65%;
-}
 .w-\[70\%\]{
   width: 70%;
 }
@@ -1095,6 +1092,12 @@ video {
 .border-b-4{
   border-bottom-width: 4px;
 }
+.border-r-2{
+  border-right-width: 2px;
+}
+.border-r-4{
+  border-right-width: 4px;
+}
 .border-t-\[1px\]{
   border-top-width: 1px;
 }
@@ -1104,6 +1107,10 @@ video {
 .border-stroke{
   --tw-border-opacity: 1;
   border-color: rgb(151 151 151 / var(--tw-border-opacity));
+}
+.border-white{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 .bg-\[\#0B0D17\]{
   --tw-bg-opacity: 1;
@@ -1165,6 +1172,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(254 215 170 / var(--tw-bg-opacity));
 }
+.bg-orange-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 186 116 / var(--tw-bg-opacity));
+}
 .bg-orange-400{
   --tw-bg-opacity: 1;
   background-color: rgb(251 146 60 / var(--tw-bg-opacity));
@@ -1204,6 +1215,10 @@ video {
 .bg-purple-400{
   --tw-bg-opacity: 1;
   background-color: rgb(192 132 252 / var(--tw-bg-opacity));
+}
+.bg-purple-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(168 85 247 / var(--tw-bg-opacity));
 }
 .bg-red-100{
   --tw-bg-opacity: 1;
@@ -1635,10 +1650,9 @@ aside{
   z-index: 20;
   max-height: 100%;
   min-height: 100vh;
-  width: 65%;
+  width: 70%;
   flex-direction: column;
   background-color: rgb(151 151 151 / 0.3);
-  padding-right: 2rem;
   padding-left: 1.25rem;
   font-family: Barlow Condensed;
   --tw-backdrop-blur: blur(40px);
@@ -1685,8 +1699,24 @@ aside nav ul:hover{
   border-bottom-width: 0px;
 }
 
-aside nav ul li a.active:hover{
-  border-bottom-width: 0px;
+aside nav ul li{
+  display: flex;
+  width: 100%;
+}
+
+aside nav ul li a{
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+aside nav ul li a.ctive{
+  border-right-width: 4px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
 }
 
 .main-wrapper{
@@ -1853,19 +1883,25 @@ nav ul li{
   text-align: center;
 }
 
-.planet nav ul li a,.technology nav ul a,.crew nav ul li a,.home nav ul li a{
+.planet nav ul li a,
+.technology nav ul a,
+.crew nav ul li a,
+.home nav ul li a{
   display: flex;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
 
-.planet nav ul li a:hover,.technology nav ul a:hover,.crew nav ul li a:hover,.home nav ul li a:hover{
+.planet nav ul li a:hover,
+.technology nav ul a:hover,
+.crew nav ul li a:hover,
+.home nav ul li a:hover{
   cursor: pointer;
   border-bottom-width: 2px;
   border-style: solid;
 }
 
-a.active{
+header nav ul li a.active{
   cursor: pointer;
   border-bottom-width: 4px;
   border-style: solid;
@@ -2296,15 +2332,11 @@ header hr {
   }
 }
 
-
-
 .specific-crew-image img{
   display: flex;
   height: 400px;
   flex-direction: column;
 }
-
-
 
 @media (max-width: 768px){
 
@@ -2312,8 +2344,6 @@ header hr {
     height: 23rem;
   }
 }
-
-
 
 @media (max-width: 428px){
 
@@ -2370,7 +2400,6 @@ header hr {
   }
 }
 
-
 .crew-section-one{
   grid-column: span 6 / span 6;
   grid-row: span 12 / span 12;
@@ -2382,7 +2411,6 @@ header hr {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-
 @media (max-width: 768px){
 
   .crew-section-one{
@@ -2391,16 +2419,12 @@ header hr {
   }
 }
 
-
-
 .tech-section-one{
   display: flex;
   flex-direction: column;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-
-
 
 @media (max-width: 768px){
 
@@ -2452,10 +2476,7 @@ header hr {
 }
  */
 
-
 /* w-[70%] flex justify-center space-x-12 max-[768px]:order-2 max-[768px]:flex-col max-[768px]:space-y-7 max-[768px]:w-full max-[768px]:h-auto */
-
-
 
 /* .planet-two {
   @apply row-span-1 col-span-12  flex max-[768px]:justify-center text-dilute text-base lg:text-lg xl:text-[28px] font-BarlowCondensed font-extralight tracking-wider space-x-3 items-center;
@@ -2703,23 +2724,17 @@ footer{
   }
 }
 
-
-
 .slide-navigation{
   margin-top: auto;
   margin-bottom: auto;
   display: flex;
 }
 
-
-
 .slide-navigation > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
-
-
 
 @media (max-width: 768px){
 
@@ -2823,7 +2838,6 @@ footer{
   }
 }
 
-
 .active-tech-slide{
   display: flex;
   height: 50px;
@@ -2838,11 +2852,9 @@ footer{
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-
 .active-tech-slide:hover{
   cursor: pointer;
 }
-
 
 @media (max-width: 768px){
 
@@ -2877,8 +2889,7 @@ footer{
     height: 33px;
     width: 33px;
   }
-} 
-
+}
 
 /* .main-tech-content{
   @apply row-span-11 col-span-12  flex max-[768px]:flex-col max-[768px]:items-center gap-6
@@ -2900,8 +2911,6 @@ footer{
   }
 }
 
-
-
 .tech-image-vehicle{
   height: 100%;
   width: 100%;
@@ -2910,8 +2919,6 @@ footer{
   background-position: center;
   background-repeat: no-repeat;
 }
-
-
 
 @media (max-width: 768px){
 
@@ -2978,20 +2985,17 @@ footer{
   }
 }
 
-
 .tech-content-container{
   display: flex;
   width: 70%;
   justify-content: center;
 }
 
-
 .tech-content-container > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(3rem * var(--tw-space-x-reverse));
   margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
 }
-
 
 @media (max-width: 768px){
 
@@ -3170,12 +3174,6 @@ footer{
     gap: 1.5rem;
   }
 
-  .max-\[768px\]\:space-x-6 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-x-reverse: 0;
-    margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-    margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
   .max-\[768px\]\:space-y-7 > :not([hidden]) ~ :not([hidden]){
     --tw-space-y-reverse: 0;
     margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
@@ -3218,10 +3216,6 @@ footer{
     padding-right: 3rem;
   }
 
-  .max-\[768px\]\:pr-14{
-    padding-right: 3.5rem;
-  }
-
   .max-\[768px\]\:pr-4{
     padding-right: 1rem;
   }
@@ -3248,10 +3242,6 @@ footer{
   .max-\[665px\]\:bg-mobileCrewBg{
     background-image: url('/src/resources/images/crew/background-crew-mobile.jpg');
   }
-
-  .max-\[665px\]\:bg-mobileTechnologyBg{
-    background-image: url('/src/resources/images/technology/background-technology-mobile.jpg');
-  }
 }
 
 @media (max-width: 655px){
@@ -3266,10 +3256,6 @@ footer{
 
   .max-\[655px\]\:hidden{
     display: none;
-  }
-
-  .max-\[655px\]\:pr-4{
-    padding-right: 1rem;
   }
 
   .max-\[655px\]\:text-\[25px\]{

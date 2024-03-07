@@ -18,7 +18,7 @@ function OverLay() {
   <div className="close">
     <img src={close} onClick={changeState}/>
   </div>
-    <Navigation list={mainNav}/>
+    <Navigation list={mainNav} isSub="true"/>
   </aside>:""
   }
  </>

@@ -6,12 +6,16 @@ import { Provider } from "react-redux";
 import selectCrew from './feature/selectCrew.js';
 import selectTech from './feature/selectTechnology.js';
 import overLay from './feature/overLay.js';
+import mainNavActive from './feature/mainNavActive.js';
+import subNav from './feature/subNav.js';
 
 const store = configureStore({
   reducer: {
 selectCrew,
 selectTech,
-overLay
+overLay,
+mainNavActive,
+subNav
   },
 });
 
