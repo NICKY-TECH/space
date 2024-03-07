@@ -20,7 +20,7 @@ aside {
 }
 
 .close {
-  @apply flex justify-end mt-8;
+  @apply flex justify-end mt-8 mb-2;
 }
 
 aside nav ul {
@@ -35,8 +35,8 @@ aside nav ul li a{
   @apply w-full flex justify-start;
 }
 
-aside nav ul li a.ctive  {
-  @apply border-r-4 border-solid border-white bg-red-400;
+aside nav ul li a.active  {
+  @apply border-r-4 border-solid border-white;
 }
 
 .main-wrapper {

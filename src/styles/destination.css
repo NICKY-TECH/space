@@ -1676,6 +1676,7 @@ aside{
 
 .close{
   margin-top: 2rem;
+  margin-bottom: 0.5rem;
   display: flex;
   justify-content: flex-end;
 }
@@ -1710,13 +1711,11 @@ aside nav ul li a{
   justify-content: flex-start;
 }
 
-aside nav ul li a.ctive{
+aside nav ul li a.active{
   border-right-width: 4px;
   border-style: solid;
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
 }
 
 .main-wrapper{
