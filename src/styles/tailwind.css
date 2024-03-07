@@ -86,7 +86,7 @@ nav ul li {
   @apply hover:border-solid hover:border-b-2 hover:cursor-pointer flex py-10;
 }
 
-header nav ul li a.active {
+header nav ul li a.active,.sub-planet-component .planet-nav ul li a.active {
   @apply border-solid border-b-4 cursor-pointer;
 }
 
