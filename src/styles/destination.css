@@ -1252,12 +1252,22 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(51 65 85 / var(--tw-bg-opacity));
 }
+.bg-stone-50{
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 250 249 / var(--tw-bg-opacity));
+}
+.bg-stone-50\/30{
+  background-color: rgb(250 250 249 / 0.3);
+}
 .bg-stroke{
   --tw-bg-opacity: 1;
   background-color: rgb(151 151 151 / var(--tw-bg-opacity));
 }
 .bg-stroke\/30{
   background-color: rgb(151 151 151 / 0.3);
+}
+.bg-transparent{
+  background-color: transparent;
 }
 .bg-white{
   --tw-bg-opacity: 1;
@@ -1362,6 +1372,12 @@ video {
 }
 .p-0{
   padding: 0px;
+}
+.p-4{
+  padding: 1rem;
+}
+.p-8{
+  padding: 2rem;
 }
 .px-12{
   padding-left: 3rem;
@@ -1896,8 +1912,10 @@ nav ul li{
 .crew nav ul li a:hover,
 .home nav ul li a:hover{
   cursor: pointer;
-  border-bottom-width: 2px;
+  border-bottom-width: 4px;
   border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(151 151 151 / var(--tw-border-opacity));
 }
 
 header nav ul li a.active,.sub-planet-component .planet-nav ul li a.active{
@@ -2143,11 +2161,15 @@ header hr {
   align-items: center;
 }
 
+.explore-bg{
+  border-radius: 9999px;
+  padding: 4rem;
+}
+
 @media (max-width: 768px){
 
   .explore-bg{
     display: flex;
-    width: 100%;
     justify-content: center;
   }
 }
@@ -3048,12 +3070,17 @@ footer{
   border-bottom-width: 0px;
 }
 
-.hover\:border-b-2:hover{
-  border-bottom-width: 2px;
+.hover\:border-b-4:hover{
+  border-bottom-width: 4px;
 }
 
 .hover\:border-solid:hover{
   border-style: solid;
+}
+
+.hover\:border-stroke:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(151 151 151 / var(--tw-border-opacity));
 }
 
 @media (max-width: 1034px){

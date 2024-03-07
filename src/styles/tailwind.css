@@ -83,7 +83,7 @@ nav ul li {
 .technology nav ul a,
 .crew nav ul li a,
 .home nav ul li a {
-  @apply hover:border-solid hover:border-b-2 hover:cursor-pointer flex py-10;
+  @apply hover:border-solid hover:border-b-4 hover:cursor-pointer hover:border-stroke flex py-10;
 }
 
 header nav ul li a.active,.sub-planet-component .planet-nav ul li a.active {
@@ -136,7 +136,7 @@ header hr {
 }
 
 .explore-bg {
-  @apply max-[768px]:w-full max-[768px]:flex max-[768px]:justify-center;
+  @apply  max-[768px]:flex max-[768px]:justify-center rounded-full p-16;
 }
 
 .home-section-two {
