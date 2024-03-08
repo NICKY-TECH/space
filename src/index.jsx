@@ -10,7 +10,7 @@ import PageImage from "./components/Global/PageImage";
 import PlanetFooterDetails from "./components/Planet/PlanetFooterDetails ";
 import PlanetParent from "./pages/PlanetParent";
 import PlanetSubComponent from "./components/Planet/PlanetSubComponent";
-import Planet from "./components/Global/Planet";
+import Planet from "./components/Planet/Planet";
 import Crew from "./pages/Crew";
 import PageLabel from "./components/Global/PageLabel";
 import CrewSectionOne from "./components/Global/CrewSectionOne";

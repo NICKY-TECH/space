@@ -14,7 +14,7 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -33,60 +33,59 @@ Users should be able to:
 
 ![](./screenshot.jpg)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+![screen1](./src/resources/images/screenshots/iPad-Air-4-space-mu-neon.vercel.app.png)
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+![screen2](./src/resources/images/screenshots/iPhone-11-PRO-space-mu-neon.vercel.app.png)
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+
+![screen2](./src/resources/images/screenshots/Macbook-Air-space-mu-neon.vercel.app.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [REPO](https://github.com/NICKY-TECH/space)
+- Live Site URL: [HOSTED](https://space-mu-neon.vercel.app/)
 
 ## My process
+- I added the base directories
+- I added various resource e.g Images, Icons e.t.c
+- I studied the figma files
+- I planned out my workflow
+- Added Project Components
+- I Commenced the Implementation process
+- I refactored my code 
+- I added my readme.md file
+
 
 ### Built with
-- [Tailwind]
+- [Tailwind](https://tailwindcss.com/) -  CSS library
 - [React](https://reactjs.org/) - JS library
-- [Redux]
--[REACT-DOM]
+- [Redux](https://redux.js.org/)-State management
+-[REACT-DOM](https://www.npmjs.com/package/react-dom)-managing routing within a react app
+-[FRAMER-MOTION](https://www.npmjs.com/package/framer-motion)- for animation
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learnt about framer-motion and used it for implementing the animations present in this project
 
 To see how you can add code snippets, see below:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+```jsx
+    <motion.img src={src} animate={{ rotate:360 }} transition={{ ease:"linear" , duration:3,repeat:Infinity }} className="absoluete top-0"/>
 ```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I want to learn more about framer-motion and its limitless possibilities.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [FRAMER-MOTION](https://www.framer.com/motion/) - This documentation helped me understand framer-motion and its implementation process
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- GITHUB - [Add your name here](https://github.com/NICKY-TECH)
+
 
