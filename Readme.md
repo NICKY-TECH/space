@@ -52,8 +52,8 @@ Users should be able to:
 - [Tailwind](https://tailwindcss.com/) -  CSS library
 - [React](https://reactjs.org/) - JS library
 - [Redux](https://redux.js.org/)-State management
--[REACT-DOM](https://www.npmjs.com/package/react-dom)-managing routing within a react app
--[FRAMER-MOTION](https://www.npmjs.com/package/framer-motion)- for animation
+- [REACT-DOM](https://www.npmjs.com/package/react-dom)-managing routing within a react app
+- [FRAMER-MOTION](https://www.npmjs.com/package/framer-motion)- for animation
 
 ### What I learned
 
