@@ -19,9 +19,11 @@ import TechnologySlide from "./components/Technology/TechnologySlide";
 import Technology from "./pages/Technology";
 import OverLay from "./components/Global/OverLay";
 import PlanetDetails from "./components/Planet/PlanetDetails";
+import Info from "./components/Global/Info";
 
 export {
   MainHeading,
+  Info,
   SubHeading,
   Text,
   NavItem,

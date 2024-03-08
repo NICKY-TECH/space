@@ -1,5 +1,5 @@
 import "/src/styles/destination.css";
-import { Header, PageLabel, CrewSectionOne, SlideButton } from "/src/index";
+import { Header, PageLabel, CrewSectionOne, SlideButton,Info } from "/src/index";
 import { useSelector } from "react-redux";
 import douglas from "/src/resources/images/crew/image-douglas-hurley.png";
 import mark from "/src/resources/images/crew/image-mark-shuttleworth.png";
@@ -89,6 +89,7 @@ function Crew() {
           </div>
         </div>
       </div>
+      <Info/>
     </section>
   );
 }
