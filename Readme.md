@@ -19,7 +19,6 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
-This is a multi-page tourism website frontend development challenge from Frontend Mentor.
 
 ### The challenge
 
@@ -47,14 +46,6 @@ Users should be able to:
 - Live Site URL: [HOSTED](https://space-mu-neon.vercel.app/)
 
 ## My process
-- I added the base directories
-- I added various resource e.g Images, Icons e.t.c
-- I studied the figma files
-- I planned out my workflow
-- Added Project Components
-- I Commenced the Implementation process
-- I refactored my code 
-- I added my readme.md file
 
 
 ### Built with
