@@ -59,8 +59,6 @@ Users should be able to:
 
 I learnt about framer-motion and used it for implementing the animations present in this project
 
-To see how you can add code snippets, see below:
-
 ```jsx
     <motion.img src={src} animate={{ rotate:360 }} transition={{ ease:"linear" , duration:3,repeat:Infinity }} className="absoluete top-0"/>
 ```
