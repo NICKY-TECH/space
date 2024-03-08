@@ -86,6 +86,6 @@ I want to learn more about framer-motion and its limitless possibilities.
 
 ## Author
 
-- GITHUB - [Add your name here](https://github.com/NICKY-TECH)
+- GITHUB - [JUSTINA](https://github.com/NICKY-TECH)
 
 
