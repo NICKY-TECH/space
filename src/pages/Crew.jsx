@@ -81,9 +81,8 @@ function Crew() {
           </div>
           <div className="crew-image">
           <div className="specific-crew-image will-change-overflow-y-hidden">
-          <AnimatePresence initial={false}>
-                <motion.img src={selectedCrew==0?douglas:selectedCrew==1?mark:selectedCrew==2?victor:ansari} variants={imageAnimation} initial={{ opacity:0 }} animate={{ opacity:1 }} key={key} transition={{ duration:4 }} />
-                </AnimatePresence>
+
+                <img src={selectedCrew==0?douglas:selectedCrew==1?mark:selectedCrew==2?victor:ansari} />
             </div>
       
           </div>
